@@ -270,19 +270,25 @@
                 return highlightCSSSelectors(match);
             });
             highlightedSyntax = highlightedSyntax.replace(/[{}][^}{]*\{/g, function (match) {
-                var firstChar;
+                var firstChar = '';
                 var matched = match.replace(/^[{}]/, function (match) {
                     firstChar = match;
                     return '';
                 });
-                var lastChar;
+                var lastChar = '';
                 matched = matched.replace(/\{$/, function (match) {
                     lastChar = match;
                     return '';
                 });
                 return firstChar + highlightCSSSelectors(matched) + lastChar;
             });
-            highlightedSyntax = highlightedSyntax.replace(/[A-Za-z(&#45;)]+(&#58;)[A-Za-z0-9(&#45;)(&nbsp;)()%.]+(&#59;)/g, function (match) {
+
+            var cssPropertyRegex = /([A-Za-z]|&#45;)+(&#58;)([A-Za-z0-9.%()]|&nbsp;|&#45;|&#44;|&#39;|&quot;|&#35;)*(&#59;|(?=(&nbsp;|<br>)+}))/gi;
+
+            // highlightedSyntax = highlightedSyntax.replace(/[A-Za-z(&#45;)]+(&#58;)[A-Za-z0-9(&#45;)(&nbsp;)()%.]+(&#59;)/g, function (match) {
+            //     return highlightCSSProperties(match);
+            // });
+            highlightedSyntax = highlightedSyntax.replace(cssPropertyRegex, function (match) {
                 return highlightCSSProperties(match);
             });
             highlightedSyntax = highlightedSyntax.replace(/(\(|\))/g, function (match) {
@@ -305,21 +311,16 @@
         };
         var highlightCSSProperties = function (highlightedSyntax) {
             var parts = highlightedSyntax.split('&#58;');
-            var prepend;
+            var prepend = '';
             var property = parts[0];
             property = property.replace(/^(&nbsp;)*/, function (match) {
                 prepend = match;
                 return '';
             });
             var value = parts[1];
-            value = value.replace(/(&#59;)$/, function (match) {
-                return '';
-            });
-            //value = value.replace(/(&nbsp)[0-9]+(\.[0-9]+)?[A-Za-z\%]*/, function (match) {
-            //	return '<span class="synlighter-highlight-css-number">' + match + '</span>';
-            //});*/
+            value = value.replace(/(&#59;)$/, '');
             return prepend + '<span class="synlighter-highlight-css-property">' + property + '</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">' + value + '</span><span class="synlighter-highlight-css-semicolon">;</span>';
-        }
+        };
 
 
         // Determine language

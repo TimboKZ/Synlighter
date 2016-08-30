@@ -206,12 +206,18 @@
 /* CSS => Dark */
 .synlighter-dark .synlighter-highlight-css-class { color:#f9f;font-weight:bold; }
 .synlighter-dark .synlighter-highlight-css-id { color:#f9f;font-weight:bold; }
-.synlighter-dark .synlighter-highlight-css-property { color:#afd1ff;font-weight:bold; }
-.synlighter-dark .synlighter-highlight-css-bracket { color:#ffafaf;font-weight:bold; }
+.synlighter-dark .synlighter-highlight-css-property { color:#f6f6f6;border-bottom: dotted 1px #666; }
+.synlighter-dark .synlighter-highlight-css-bracket { color:#8080ff;font-weight:bold; }
 .synlighter-dark .synlighter-highlight-css-figurebracket { color:#ff6eff;font-weight:bold; }
-.synlighter-dark .synlighter-highlight-css-colon { color:#ff0;font-weight:bold; }
+.synlighter-dark .synlighter-highlight-css-colon { color:#ff80ea;font-weight:bold; }
 .synlighter-dark .synlighter-highlight-css-comma { color:#ff0;font-weight:bold; }
-.synlighter-dark .synlighter-highlight-css-semicolon { color:#960;font-weight:bold; }
+.synlighter-dark .synlighter-highlight-css-semicolon {
+	color: #ff80ea;
+	font-weight: 700
+}
+.synlighter-dark .synlighter-highlight-css-value {
+	color: #ac80ff;
+}
 .synlighter-dark .synlighter-highlight-css-comment { color:#777 !important; }
 .synlighter-dark .synlighter-highlight-css-comment span { color:#777 !important; }
 .synlighter-dark .synlighter-highlight-css-word { color:#09F; !important;font-weight:bold; }
