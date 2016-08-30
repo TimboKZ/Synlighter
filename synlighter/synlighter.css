@@ -71,6 +71,7 @@
 	line-height:18px;
 	text-align:right;
 	padding:18px 8px;
+	z-index:888;
 }
 .synlighter-dark .synlighter-counter { border-right:solid 1px rgba(60, 60, 60, 0.4);background-color:rgba(60, 60, 60, 1);color:#fff; }
 .synlighter-light .synlighter-counter { border-right:solid 1px rgba(230, 230, 230, 0.4);background-color:rgba(230, 230, 230, 1);color:#444; }
