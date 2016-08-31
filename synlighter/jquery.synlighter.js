@@ -459,7 +459,7 @@
             }
         }
         container.append('<div class="synlighter-counter">' + linesHTML + '</div>');
-        var syntaxPadding = maxLength * 10 + 16 + 10;
+        var syntaxPadding = 20;//maxLength * 10 + 36 + 10;
 
         // Display syntax
         container.append('<div class="synlighter-syntax synlighter-syntax-' + lang + '"><code class="synlighter-syntax-code" style="padding-right:16px;padding-left:' + syntaxPadding + 'px;"><pre class="synlighter-syntax-pre">' + highlightedSyntax + '</pre></code></div>');
