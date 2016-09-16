@@ -301,10 +301,10 @@
             return highlightedSyntax;
         };
         var highlightCSSSelectors = function (highlightedSyntax) {
-            highlightedSyntax = highlightedSyntax.replace(/\.[A-Za-z0-9(&#45;)]+/g, function (match) {
+            highlightedSyntax = highlightedSyntax.replace(/\.[A-Za-z0-9_(&#45;)]+/g, function (match) {
                 return '<span class="synlighter-highlight-css-class">' + match + '</span>';
             });
-            highlightedSyntax = highlightedSyntax.replace(/(^|})#[A-Za-z0-9(&#45;)]+/g, function (match) {
+            highlightedSyntax = highlightedSyntax.replace(/(^|})#[A-Za-z0-9_(&#45;)]+/g, function (match) {
                 return '<span class="synlighter-highlight-css-id">' + match + '</span>';
             });
             return highlightedSyntax;
