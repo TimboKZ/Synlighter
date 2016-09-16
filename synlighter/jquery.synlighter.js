@@ -16,12 +16,12 @@
         var warnings = [];
         var settings = $.extend({
             allowOverwrite: true,
-            colorScheme: 'dark',
             maxHeight: null,
             counter: null,
             langAttr: 'data-language',
             suppressWarnings: false,
-            callback: function() {}
+            callback: function () {
+            }
         }, options || {});
 
 
@@ -75,18 +75,18 @@
         };
         // Comment highlighting function
         var highlightComment = function (lang, highlightedSyntax) {
-            if (lang == 'js' || lang == 'php') {
-                highlightedSyntax = highlightedSyntax.replace(/\\?&#47;&#47;.*?<br>/g, function (match) {
-                    if (match.substring(0, 1) == '\\') {
-                        return match;
-                    }
-                    var matched = match;
-                    matched = matched.replace(/&#39;/g, '<synlighter-single-quote>');
-                    matched = matched.replace(/&quot;/g, '<synlighter-double-quote>');
-                    return '<span class="synlighter-highlight-' + lang + '-comment">' + matched + '</span>';
-                });
-            }
             if (lang == 'js' || lang == 'php' || lang == 'css') {
+                if (lang != 'css') {
+                    highlightedSyntax = highlightedSyntax.replace(/\\?&#47;&#47;.*?<br>/g, function (match) {
+                        if (match.substring(0, 1) == '\\') {
+                            return match;
+                        }
+                        var matched = match;
+                        matched = matched.replace(/&#39;/g, '<synlighter-single-quote>');
+                        matched = matched.replace(/&quot;/g, '<synlighter-double-quote>');
+                        return '<span class="synlighter-highlight-' + lang + '-comment">' + matched + '</span>';
+                    });
+                }
                 highlightedSyntax = highlightedSyntax.replace(/\\?&#47;\*.*?\*\\?&#47;/g, function (match) {
                     if (match.substring(0, 1) == '\\' || match.substring(match.length - 6, match.length - 5) == '\\') {
                         return match;
@@ -154,7 +154,7 @@
                 styleCount++;
                 return beginning + '<synlighter-style-' + scriptCount + '>' + end;
             });
-            highlightedSyntax = highlightedSyntax.replace(/&lt;[a-zA-Z1-9!&#47;].*?&gt;/g, function (match) {
+            highlightedSyntax = highlightedSyntax.replace(/&lt;[a-zA-Z1-9!&#45;].*?&gt;/g, function (match) {
                 var inTag = match;
                 var tagIsComment = inTag.replace(/^&lt;!&#45;&#45;/, '');
                 tagIsComment = tagIsComment.replace(/&#45;&#45;&gt;$/, '');
@@ -192,26 +192,24 @@
                     }
                 }
             });
-            $.each(scriptArray, function (key, script) {
-                var regexp = new RegExp('<synlighter-script-' + key + '>');
-                highlightedSyntax = highlightedSyntax.replace(regexp, highlightJS(script));
-            });
-            $.each(styleArray, function (key, style) {
-                var regexp = new RegExp('<synlighter-style-' + key + '>');
-                highlightedSyntax = highlightedSyntax.replace(regexp, highlightCSS(style));
-            });
+            var inlineSnippets = function (string, operation, key, snippet) {
+                var regexp = new RegExp('<synlighter-' + string + '-' + key + '>');
+                highlightedSyntax = highlightedSyntax.replace(regexp, operation(snippet));
+            };
+            $.each(scriptArray, inlineSnippets.bind('script', highlightJS));
+            $.each(styleArray, inlineSnippets.bind('style', highlightCSS));
             return highlightedSyntax;
         };
         // JS highlighting function
         var highlightJS = function (highlightedSyntax) {
-            var replaceWords = ['break', 'case', 'catch', 'continue', 'debugger', 'default', 'delete', 'do', 'document', 'finally', 'var', 'return', 'for', 'while', 'new', 'in', 'switch', 'with', 'void', 'typeof', 'try', 'throw', 'this', 'else', 'null', 'true', 'false', 'instanceof'];
-            highlightedSyntax = highlightedSyntax.replace(/\w*/g, function (match) {
+            var replaceWords = ['break', 'case', 'catch', 'continue', 'debugger', 'default', 'delete', 'do', 'document', 'var', 'return', 'for', 'while', 'new', 'in', 'switch', 'with', 'void', 'typeof', 'try', 'throw', 'this', 'else', 'null', 'true', 'false', 'instanceof'];
+            highlightedSyntax = highlightedSyntax.replace(/[a-z]{2,}/g, function (match) {
                 if ($.inArray(match, replaceWords) > -1) {
                     return '<span class="synlighter-highlight-js-word">' + match + '</span>';
                 }
                 return match;
             });
-            highlightedSyntax = highlightedSyntax.replace(/[0-9]+(\.[0-9]+)?[^0-9]{1}/g, function (match) {
+            highlightedSyntax = highlightedSyntax.replace(/\d+(\.\d+)?[^0-9]{1}/g, function (match) {
                 if (match.substring(match.length - 1) == ';') {
                     return match;
                 }
@@ -234,22 +232,40 @@
                 }
                 return prefix + '<span class="synlighter-highlight-js-method">' + matched + '</span>(';
             });
-            highlightedSyntax = highlightedSyntax.replace(/(\(|\))/g, function (match) {
-                return '<span class="synlighter-highlight-js-bracket">' + match + '</span>';
-            });
-            highlightedSyntax = highlightedSyntax.replace(/(\{|})/g, function (match) {
-                return '<span class="synlighter-highlight-js-figurebracket">' + match + '</span>';
-            });
-            highlightedSyntax = highlightedSyntax.replace(/(\[|])/g, function (match) {
-                return '<span class="synlighter-highlight-js-squarebracket">' + match + '</span>';
+            highlightedSyntax = highlightedSyntax.replace(/[(){}[\]]/g, function (match) {
+                var string;
+                switch (match) {
+                    case '{':
+                    case '}':
+                        string = 'figurebracket';
+                        break;
+                    case '[':
+                    case ']':
+                        string = 'squarebracket';
+                        break;
+                    default:
+                        string = 'bracket';
+                }
+                return '<span class="synlighter-highlight-js-' + string + '">' + match + '</span>';
             });
             highlightedSyntax = highlightComment('js', highlightedSyntax);
             highlightedSyntax = highlightedSyntax.replace(/(&lt;|&gt;|&#61;|&#45;|\+|\*|&#47;|\||%)/g, function (match) {
                 return '<span class="synlighter-highlight-js-operator">' + match + '</span>';
             });
-            highlightedSyntax = highlightedSyntax.replace(/&#58;/g, '<span class="synlighter-highlight-js-colon">&#58;</span>');
-            highlightedSyntax = highlightedSyntax.replace(/&#59;/g, '<span class="synlighter-highlight-js-semicolon">&#59;</span>');
-            highlightedSyntax = highlightedSyntax.replace(/&#44;/g, '<span class="synlighter-highlight-js-comma">&#44;</span>');
+            highlightedSyntax = highlightedSyntax.replace(/&#(58|59|44);/g, function (match) {
+                var string;
+                switch (match) {
+                    case '&#44;':
+                        string = 'comma';
+                        break;
+                    case '&#58;':
+                        string = 'colon';
+                        break;
+                    default:
+                        string = 'semicolon';
+                }
+                return '<span class="synlighter-highlight-js-' + string + '">' + match + '</span>';
+            });
             highlightedSyntax = highlightQuote('js', highlightedSyntax);
             highlightedSyntax = highlightedSyntax.replace(/<synlighter-single-quote>/g, '&#39;');
             highlightedSyntax = highlightedSyntax.replace(/<synlighter-double-quote>/g, '&quot;');
@@ -284,9 +300,6 @@
 
             var cssPropertyRegex = /([A-Za-z]|&#45;)+(&#58;)([A-Za-z0-9.%()]|&nbsp;|&#45;|&#44;|&#39;|&quot;|&#35;)*(&#59;|(?=(&nbsp;|<br>)+}))/gi;
 
-            // highlightedSyntax = highlightedSyntax.replace(/[A-Za-z(&#45;)]+(&#58;)[A-Za-z0-9(&#45;)(&nbsp;)()%.]+(&#59;)/g, function (match) {
-            //     return highlightCSSProperties(match);
-            // });
             highlightedSyntax = highlightedSyntax.replace(cssPropertyRegex, function (match) {
                 return highlightCSSProperties(match);
             });
@@ -353,16 +366,7 @@
 
 
         // Determine colorscheme
-        var colorSchemeClass;
-        var colorScheme = settings.colorScheme;
-        if (colorScheme.toLowerCase() == 'light') {
-            colorSchemeClass = 'synlighter-light';
-        } else {
-            if (colorScheme.toLowerCase() != 'dark' && !settings.suppressWarnings) {
-                warnings.push('Unrecognised Color Scheme: ' + colorScheme);
-            }
-            colorSchemeClass = 'synlighter-dark';
-        }
+        var colorSchemeClass = 'synlighter-dark';
 
 
         // Save original syntax
@@ -439,26 +443,7 @@
 
 
         // Insert counter
-        var linesArray = highlightedSyntax.split('<br>');
-        var linesNum = linesArray.length;
-        var linesHTML = '';
-        var maxLength = 1;
-        var currLine = 0;
-        while (currLine < linesNum) {
-            currLine++;
-            maxLength = currLine.toString().length;
-            if (settings.counter == 'alt') {
-                if (currLine == 1 || currLine % 5 == 0) {
-                    linesHTML += currLine + '<br>';
-                } else {
-                    linesHTML += '<br>';
-                }
-            } else {
-                linesHTML += currLine + '<br>';
-            }
-        }
-        container.append('<div class="synlighter-counter">' + linesHTML + '</div>');
-        var syntaxPadding = 20;//maxLength * 10 + 36 + 10;
+        var syntaxPadding = 20;
 
         // Display syntax
         container.append('<div class="synlighter-syntax synlighter-syntax-' + lang + '"><code class="synlighter-syntax-code" style="padding-right:16px;padding-left:' + syntaxPadding + 'px;"><pre class="synlighter-syntax-pre">' + highlightedSyntax + '</pre></code></div>');

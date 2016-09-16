@@ -356,7 +356,6 @@
 				localStorage.setItem('times', JSON.stringify([]));
 			}
 			var times = JSON.parse(localStorage.getItem('times'));
-			console.log(times);
 			var sum = 0;
 			for(var k = 0; k < times.length; k++) {
 				sum += times[k];
@@ -364,7 +363,7 @@
 			sum /= times.length;
 			console.log(sum.toFixed(2));
 			times.push(time);
-			localStorage.setItem('times', JSON.stringify(times));
+			localStorage.setItem('times', JSON.stringify([]));
 			console.log(times);
 			for(var i = 0; i < allHighlightedSyntax.length; i++) {
 				var identical = allHighlightedSyntax[i] == originalResult[i];
