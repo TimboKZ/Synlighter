@@ -30,8 +30,6 @@
             if (lang == 'html') {
                 return highlightedSyntax;
             }
-            var doubleQuoteArray = highlightedSyntax.split('&quot;');
-            var singleQuoteArray = highlightedSyntax.split('&#39');
             var highlightSingleQuotes = function (lang, highlightedSyntax) {
                 highlightedSyntax = highlightedSyntax.replace(/\\?&#39;.*?\\?&#39;/g, function (match) {
                     if (match.substring(0, 1) == '\\' || match.substring(match.length - 6, match.length - 5) == '\\') {
@@ -62,7 +60,7 @@
                 });
                 return highlightedSyntax;
             };
-            if (doubleQuoteArray[0].length > singleQuoteArray[0].length) {
+            if (highlightedSyntax.indexOf('&quot;') > highlightedSyntax.indexOf('&#39;')) {
                 // ' (single quote) comes first
                 highlightedSyntax = highlightSingleQuotes(lang, highlightedSyntax);
                 highlightedSyntax = highlightDoubleQuotes(lang, highlightedSyntax);
@@ -175,7 +173,7 @@
                         matched = matched.replace(/&#39;$/, '');
                         return '<span class="synlighter-highlight-html-singlequote">&#39;</span><span class="synlighter-highlight-html-singlequote-content">' + matched + '</span><span class="synlighter-highlight-html-singlequote">&#39;</span>';
                     });
-                    inTag = inTag.replace(/\&nbsp;[a-zA-Z(&#45;)]*&#61;.*?/g, function (match) {
+                    inTag = inTag.replace(/&nbsp;[a-zA-Z(&#45;)]*&#61;.*?/g, function (match) {
                         var attr = match.replace(/&#61;/, '');
                         attr = attr.replace(/&nbsp;/, '');
                         return '&nbsp;<span class="synlighter-highlight-html-attr">' + attr + '</span>&#61;';

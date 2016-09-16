@@ -344,13 +344,28 @@
 		var allHighlightedSyntax = [];
 
         $(document).ready(function (e) {
-            console.time('Highlight');
+			var start = performance.now();
             $('.synlighter1').synlighter({
             	callback: function(highlightedSyntax) {
 					allHighlightedSyntax.push(highlightedSyntax);
 				}
 			});
-            console.timeEnd('Highlight');
+			var end = performance.now();
+			var time = end - start;
+			if(!localStorage.getItem('times')) {
+				localStorage.setItem('times', JSON.stringify([]));
+			}
+			var times = JSON.parse(localStorage.getItem('times'));
+			console.log(times);
+			var sum = 0;
+			for(var k = 0; k < times.length; k++) {
+				sum += times[k];
+			}
+			sum /= times.length;
+			console.log(sum.toFixed(2));
+			times.push(time);
+			localStorage.setItem('times', JSON.stringify(times));
+			console.log(times);
 			for(var i = 0; i < allHighlightedSyntax.length; i++) {
 				var identical = allHighlightedSyntax[i] == originalResult[i];
 				console.log(identical);
