@@ -1,24 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title></title>
-   <script src="http://code.jquery.com/jquery-1.11.0.js" language="javascript"></script>
-   <script src="synlighter/jquery.synlighter.js" language="javascript"></script>
+   <title>Synlighter Benchmark</title>
    <link rel="stylesheet" type="text/css" href="synlighter/synlighter.css" />
 </head>
 <body style="background-color:#f2f2f2;">
 <section style="width:700px;margin:0px auto;background-color:#fff;padding:20px;font-family:Georgia, 'Times New Roman', Times, serif;">
 <h1>Synlighter Demo</h1>
-<script>
-$(document).ready(function(e) {
-	$('.synlighter1').synlighter({
-	});
-	$('.synlighter2').synlighter({
-		colorScheme: 'dark',
-		langAttr: 'alt'
-	});
-});
-</script>
 <xmp class="synlighter1" data-language="css">
 /* -------------------------------------------------------------
       CSS3, Please!
@@ -122,430 +110,148 @@ $(document).ready(function(e) {
 <br>
 <br>
 <xmp class="synlighter1" data-language="html">
-	<!doctype html>
-	<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>HTML5 Test Page</title>
-	</head>
-	<body>
-	<div id="top" class="page" role="document">
-		<header role="banner">
-			<h1>HTML5 Test Page</h1>
-			<p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
-		</header>
-		<nav role="navigation">
-			<ul>
-				<li>
-					<a href="#text">Text</a>
-					<ul>
-						<li><a href="#text__headings">Headings</a></li>
-						<li><a href="#text__paragraphs">Paragraphs</a></li>
-						<li><a href="#text__blockquotes">Blockquotes</a></li>
-						<li><a href="#text__lists">Lists</a></li>
-						<li><a href="#text__hr">Horizontal rules</a></li>
-						<li><a href="#text__tables">Tabular data</a></li>
-						<li><a href="#text__code">Code</a></li>
-						<li><a href="#text__inline">Inline elements</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#embedded">Embedded content</a>
-					<ul>
-						<li><a href="#embedded__images">Images</a></li>
-						<li><a href="#embedded__audio">Audio</a></li>
-						<li><a href="#embedded__video">Video</a></li>
-						<li><a href="#embedded__canvas">Canvas</a></li>
-						<li><a href="#embedded__meter">Meter</a></li>
-						<li><a href="#embedded__progress">Progress</a></li>
-						<li><a href="#embedded__svg">Inline SVG</a></li>
-						<li><a href="#embedded__iframe">IFrames</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#forms">Form elements</a>
-					<ul>
-						<li><a href="#forms__input">Input fields</a></li>
-						<li><a href="#forms__select">Select menus</a></li>
-						<li><a href="#forms__checkbox">Checkboxes</a></li>
-						<li><a href="#forms__radio">Radio buttons</a></li>
-						<li><a href="#forms__textareas">Textareas</a></li>
-						<li><a href="#forms__html5">HTML5 inputs</a></li>
-						<li><a href="#forms__action">Action buttons</a></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-		<main role="main">
-			<section id="text">
-				<header><h1>Text</h1></header>
-				<article id="text__headings">
-					<header>
-						<h1>Headings</h1>
-					</header>
-					<div>
-						<h1>Heading 1</h1>
-						<h2>Heading 2</h2>
-						<h3>Heading 3</h3>
-						<h4>Heading 4</h4>
-						<h5>Heading 5</h5>
-						<h6>Heading 6</h6>
-					</div>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-				<article id="text__paragraphs">
-					<header><h1>Paragraphs</h1></header>
-					<div>
-						<p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
-					</div>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-				<article id="text__blockquotes">
-					<header><h1>Blockquotes</h1></header>
-					<div>
-						<blockquote>
-							<p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
-							<p>It is typically distinguished visually using indentation and a different typeface or smaller size quotation. It may or may not include a citation, usually placed at the bottom.</p>
-							<cite><a href="#!">Said no one, ever.</a></cite>
-						</blockquote>
-					</div>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-				<article id="text__lists">
-					<header><h1>Lists</h1></header>
-					<div>
-						<h3>Definition list</h3>
-						<dl>
-							<dt>Definition List Title</dt>
-							<dd>This is a definition list division.</dd>
-						</dl>
-						<h3>Ordered List</h3>
-						<ol>
-							<li>List Item 1</li>
-							<li>List Item 2</li>
-							<li>List Item 3</li>
-						</ol>
-						<h3>Unordered List</h3>
-						<ul>
-							<li>List Item 1</li>
-							<li>List Item 2</li>
-							<li>List Item 3</li>
-						</ul>
-					</div>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-				<article id="text__hr">
-					<header><h1>Horizontal rules</h1></header>
-					<div>
-						<hr>
-					</div>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-				<article id="text__tables">
-					<header><h1>Tabular data</h1></header>
-					<table>
-						<caption>Table Caption</caption>
-						<thead>
-						<tr>
-							<th>Table Heading 1</th>
-							<th>Table Heading 2</th>
-							<th>Table Heading 3</th>
-							<th>Table Heading 4</th>
-							<th>Table Heading 5</th>
-						</tr>
-						</thead>
-						<tfoot>
-						<tr>
-							<th>Table Footer 1</th>
-							<th>Table Footer 2</th>
-							<th>Table Footer 3</th>
-							<th>Table Footer 4</th>
-							<th>Table Footer 5</th>
-						</tr>
-						</tfoot>
-						<tbody>
-						<tr>
-							<td>Table Cell 1</td>
-							<td>Table Cell 2</td>
-							<td>Table Cell 3</td>
-							<td>Table Cell 4</td>
-							<td>Table Cell 5</td>
-						</tr>
-						<tr>
-							<td>Table Cell 1</td>
-							<td>Table Cell 2</td>
-							<td>Table Cell 3</td>
-							<td>Table Cell 4</td>
-							<td>Table Cell 5</td>
-						</tr>
-						<tr>
-							<td>Table Cell 1</td>
-							<td>Table Cell 2</td>
-							<td>Table Cell 3</td>
-							<td>Table Cell 4</td>
-							<td>Table Cell 5</td>
-						</tr>
-						<tr>
-							<td>Table Cell 1</td>
-							<td>Table Cell 2</td>
-							<td>Table Cell 3</td>
-							<td>Table Cell 4</td>
-							<td>Table Cell 5</td>
-						</tr>
-						</tbody>
-					</table>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-				<article id="text__code">
-					<header><h1>Code</h1></header>
-					<div>
-						<p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
-						<p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
-						<p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp></p>
-						<h2>Pre-formatted text</h2>
-						<pre>P R E F O R M A T T E D T E X T
-  ! " # $ % &amp; ' ( ) * + , - . /
-  0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
-  @ A B C D E F G H I J K L M N O
-  P Q R S T U V W X Y Z [ \ ] ^ _
-  ` a b c d e f g h i j k l m n o
-  p q r s t u v w x y z { | } ~ </pre>
-					</div>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-				<article id="text__inline">
-					<header><h1>Inline elements</h1></header>
-					<div>
-						<p><a href="#!">This is a text link</a>.</p>
-						<p><strong>Strong is used to indicate strong importance.</strong></p>
-						<p><em>This text has added emphasis.</em></p>
-						<p>The <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
-						<p>The <i>i element</i> is text that is offset from the normal text.</p>
-						<p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
-						<p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
-						<p><s>This text has a strikethrough</s>.</p>
-						<p>Superscript<sup>®</sup>.</p>
-						<p>Subscript for things like H<sub>2</sub>O.</p>
-						<p><small>This small text is small for for fine print, etc.</small></p>
-						<p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
-						<p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q></p>
-						<p><cite>This is a citation.</cite></p>
-						<p>The <dfn>dfn element</dfn> indicates a definition.</p>
-						<p>The <mark>mark element</mark> indicates a highlight.</p>
-						<p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
-						<p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
-					</div>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-			</section>
+<div id="top" class="page" role="document">
+	<header role="banner">
+		<h1>HTML5 Test Page</h1>
+		<p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
+	</header>
+	<nav role="navigation">
+		<ul>
+			<li>
+				<a href="#text">Text</a>
+				<ul>
+					<li><a href="#text__headings">Headings</a></li>
+					<li><a href="#text__paragraphs">Paragraphs</a></li>
+					<li><a href="#text__blockquotes">Blockquotes</a></li>
+					<li><a href="#text__lists">Lists</a></li>
+					<li><a href="#text__hr">Horizontal rules</a></li>
+					<li><a href="#text__tables">Tabular data</a></li>
+					<li><a href="#text__code">Code</a></li>
+					<li><a href="#text__inline">Inline elements</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<main role="main">
+		<section id="text">
+			<header><h1>Text</h1></header>
+			<article id="text__headings">
+				<header>
+					<h1>Headings</h1>
+				</header>
+				<footer><p><a href="#top">[Top]</a></p></footer>
+			</article>
+			<article id="text__paragraphs">
+				<header><h1>Paragraphs</h1></header>
+				<div>
+					<p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+				</div>
+				<footer><p><a href="#top">[Top]</a></p></footer>
+			</article>
+			<article id="text__blockquotes">
+				<header><h1>Blockquotes</h1></header>
+				<div>
+					<blockquote>
+						<p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
+						<p>It is typically distinguished visually using indentation and a different typeface or smaller size quotation. It may or may not include a citation, usually placed at the bottom.</p>
+						<cite><a href="#!">Said no one, ever.</a></cite>
+					</blockquote>
+				</div>
+				<footer><p><a href="#top">[Top]</a></p></footer>
+			</article>
+			<article id="text__inline">
+				<header><h1>Inline elements</h1></header>
+				<div>
+					<p><a href="#!">This is a text link</a>.</p>
+					<p><strong>Strong is used to indicate strong importance.</strong></p>
+					<p><em>This text has added emphasis.</em></p>
+					<p>The <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
+					<p>The <i>i element</i> is text that is offset from the normal text.</p>
+					<p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
+					<p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
+					<p><s>This text has a strikethrough</s>.</p>
+					<p>Superscript<sup>®</sup>.</p>
+					<p>Subscript for things like H<sub>2</sub>O.</p>
+					<p><small>This small text is small for for fine print, etc.</small></p>
+					<p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+					<p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q></p>
+					<p><cite>This is a citation.</cite></p>
+					<p>The <dfn>dfn element</dfn> indicates a definition.</p>
+					<p>The <mark>mark element</mark> indicates a highlight.</p>
+					<p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
+					<p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
+				</div>
+				<footer><p><a href="#top">[Top]</a></p></footer>
+			</article>
+		</section>
 
-			<section id="embedded">
-				<header><h1>Embedded content</h1></header>
-				<article id="embedded__images">
-					<header><h2>Images</h2></header>
-					<div>
-						<h3>No <code>&lt;figure&gt;</code> element</h3>
-						<p><img src="http://placekitten.com/480/480" alt="Image alt text"></p>
-						<h3>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h3>
-						<figure><img src="http://placekitten.com/420/420" alt="Image alt text"></figure>
-						<h3>Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h3>
-						<figure>
-							<img src="http://placekitten.com/420/420" alt="Image alt text">
-							<figcaption>Here is a caption for this image.</figcaption>
-						</figure>
-					</div>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-				<article id="embedded__audio">
-					<header><h2>Audio</h2></header>
-					<div><audio controls="">audio</audio></div>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-				<article id="embedded__video">
-					<header><h2>Video</h2></header>
-					<div><video controls="">video</video></div>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-				<article id="embedded__canvas">
-					<header><h2>Canvas</h2></header>
-					<div><canvas>canvas</canvas></div>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-				<article id="embedded__meter">
-					<header><h2>Meter</h2></header>
-					<div><meter value="2" min="0" max="10">2 out of 10</meter></div>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-				<article id="embedded__progress">
-					<header><h2>Progress</h2></header>
-					<div><progress>progress</progress></div>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-				<article id="embedded__svg">
-					<header><h2>Inline SVG</h2></header>
-					<div><svg width="100px" height="100px"><circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle></svg></div>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-				<article id="embedded__iframe">
-					<header><h2>IFrame</h2></header>
-					<div><iframe src="index.html" height="300"></iframe></div>
-					<footer><p><a href="#top">[Top]</a></p></footer>
-				</article>
-			</section>
-			<section id="forms">
-				<header><h1>Form elements</h1></header>
-				<form>
-					<fieldset id="forms__input">
-						<legend>Input fields</legend>
-						<p>
-							<label for="input__text">Text Input</label>
-							<input id="input__text" type="text" placeholder="Text Input">
-						</p>
-						<p>
-							<label for="input__password">Password</label>
-							<input id="input__password" type="password" placeholder="Type your Password">
-						</p>
-						<p>
-							<label for="input__webaddress">Web Address</label>
-							<input id="input__webaddress" type="url" placeholder="http://yoursite.com">
-						</p>
-						<p>
-							<label for="input__emailaddress">Email Address</label>
-							<input id="input__emailaddress" type="email" placeholder="name@email.com">
-						</p>
-						<p>
-							<label for="input__phone">Phone Number</label>
-							<input id="input__phone" type="tel" placeholder="(999) 999-9999">
-						</p>
-						<p>
-							<label for="input__search">Search</label>
-							<input id="input__search" type="search" placeholder="Enter Search Term">
-						</p>
-						<p>
-							<label for="input__text2">Number Input</label>
-							<input id="input__text2" type="number" placeholder="Enter a Number">
-						</p>
-						<p>
-							<label for="input__text3" class="error">Error</label>
-							<input id="input__text3" class="is-error" type="text" placeholder="Text Input">
-						</p>
-						<p>
-							<label for="input__text4" class="valid">Valid</label>
-							<input id="input__text4" class="is-valid" type="text" placeholder="Text Input">
-						</p>
-					</fieldset>
-					<p><a href="#top">[Top]</a></p>
-					<fieldset id="forms__select">
-						<legend>Select menus</legend>
-						<p>
-							<label for="select">Select</label>
-							<select id="select">
-								<optgroup label="Option Group">
-									<option>Option One</option>
-									<option>Option Two</option>
-									<option>Option Three</option>
-								</optgroup>
-							</select>
-						</p>
-					</fieldset>
-					<p><a href="#top">[Top]</a></p>
-					<fieldset id="forms__checkbox">
-						<legend>Checkboxes</legend>
-						<ul class="list list--bare">
-							<li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
-							<li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
-							<li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
-						</ul>
-					</fieldset>
-					<p><a href="#top">[Top]</a></p>
-					<fieldset id="forms__radio">
-						<legend>Radio buttons</legend>
-						<ul class="list list--bare">
-							<li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li>
-							<li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option 2</label></li>
-							<li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
-						</ul>
-					</fieldset>
-					<p><a href="#top">[Top]</a></p>
-					<fieldset id="forms__textareas">
-						<legend>Textareas</legend>
-						<p>
-							<label for="textarea">Textarea</label>
-							<textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
-						</p>
-					</fieldset>
-					<p><a href="#top">[Top]</a></p>
-					<fieldset id="forms__html5">
-						<legend>HTML5 inputs</legend>
-						<p>
-							<label for="ic">Color input</label>
-							<input type="color" id="ic" value="#000000">
-						</p>
-						<p>
-							<label for="in">Number input</label>
-							<input type="number" id="in" min="0" max="10" value="5">
-						</p>
-						<p>
-							<label for="ir">Range input</label>
-							<input type="range" id="ir" value="10">
-						</p>
-						<p>
-							<label for="idd">Date input</label>
-							<input type="date" id="idd" value="1970-01-01">
-						</p>
-						<p>
-							<label for="idm">Month input</label>
-							<input type="month" id="idm" value="1970-01">
-						</p>
-						<p>
-							<label for="idw">Week input</label>
-							<input type="week" id="idw" value="1970-W01">
-						</p>
-						<p>
-							<label for="idt">Datetime input</label>
-							<input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
-						</p>
-						<p>
-							<label for="idtl">Datetime-local input</label>
-							<input type="datetime-local" id="idtl" value="1970-01-01T00:00">
-						</p>
-					</fieldset>
-					<p><a href="#top">[Top]</a></p>
-					<fieldset id="forms__action">
-						<legend>Action buttons</legend>
-						<p>
-							<input type="submit" value="<input type=submit>">
-							<input type="button" value="<input type=button>">
-							<input type="reset" value="<input type=reset>">
-							<input type="submit" value="<input disabled>" disabled>
-						</p>
-						<p>
-							<button type="submit">&lt;button type=submit&gt;</button>
-							<button type="button">&lt;button type=button&gt;</button>
-							<button type="reset">&lt;button type=reset&gt;</button>
-							<button type="button" disabled>&lt;button disabled&gt;</button>
-						</p>
-					</fieldset>
-					<p><a href="#top">[Top]</a></p>
-				</form>
-			</section>
-		</main>
-		<footer role="contentinfo">
-			<p>Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
-		</footer>
-	</div>
-	</body>
-	</html>
+		<section id="embedded">
+			<header><h1>Embedded content</h1></header>
+			<article id="embedded__images">
+				<header><h2>Images</h2></header>
+				<div>
+					<h3>No <code>&lt;figure&gt;</code> element</h3>
+					<p><img src="http://placekitten.com/480/480" alt="Image alt text"></p>
+					<h3>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h3>
+					<figure><img src="http://placekitten.com/420/420" alt="Image alt text"></figure>
+					<h3>Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h3>
+					<figure>
+						<img src="http://placekitten.com/420/420" alt="Image alt text">
+						<figcaption>Here is a caption for this image.</figcaption>
+					</figure>
+				</div>
+				<footer><p><a href="#top">[Top]</a></p></footer>
+			</article>
+			<article id="embedded__audio">
+				<header><h2>Audio</h2></header>
+				<div><audio controls="">audio</audio></div>
+				<footer><p><a href="#top">[Top]</a></p></footer>
+			</article>
+			<article id="embedded__video">
+				<header><h2>Video</h2></header>
+				<div><video controls="">video</video></div>
+				<footer><p><a href="#top">[Top]</a></p></footer>
+			</article>
+			<article id="embedded__canvas">
+				<header><h2>Canvas</h2></header>
+				<div><canvas>canvas</canvas></div>
+				<footer><p><a href="#top">[Top]</a></p></footer>
+			</article>
+			<article id="embedded__meter">
+				<header><h2>Meter</h2></header>
+				<div><meter value="2" min="0" max="10">2 out of 10</meter></div>
+				<footer><p><a href="#top">[Top]</a></p></footer>
+			</article>
+			<article id="embedded__progress">
+				<header><h2>Progress</h2></header>
+				<div><progress>progress</progress></div>
+				<footer><p><a href="#top">[Top]</a></p></footer>
+			</article>
+			<article id="embedded__svg">
+				<header><h2>Inline SVG</h2></header>
+				<div><svg width="100px" height="100px"><circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle></svg></div>
+				<footer><p><a href="#top">[Top]</a></p></footer>
+			</article>
+			<article id="embedded__iframe">
+				<header><h2>IFrame</h2></header>
+				<div><iframe src="index.html" height="300"></iframe></div>
+				<footer><p><a href="#top">[Top]</a></p></footer>
+			</article>
+		</section>
+	</main>
+	<footer role="contentinfo">
+		<p>Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
+	</footer>
+</div>
 </xmp>
 <br>
 <br>
-<xmp class="synlighter2" alt="jquery">
+<xmp class="synlighter1" data-language="jquery">
 (function($){
 	var Synlighter = function(element, options) {
-		
+
 		var synlighterVersion = '2.0.0';
-		
+
 		var container = $(element);
 		var object = this;
 		var warnings = [];
@@ -557,60 +263,13 @@ $(document).ready(function(e) {
 		   langAttr: 'data-language',
 		   suppressWarnings: false,
 		}, options || {});
-		
-		
+
+
 		// Quote highlighting function
 		var highlightQuote = function(lang, highlightedSyntax) {
 			if(lang == 'html') {
 				return highlightedSyntax;
 			}
-			var doubleQuoteArray = highlightedSyntax.split('&quot;');
-			var singleQuoteArray = highlightedSyntax.split('&#39');
-			var highlightSingleQuotes = function(lang, highlightedSyntax) {
-				highlightedSyntax = highlightedSyntax.replace(/\\?&#39;.*?\\?&#39;/g, function(match) {
-					if(match.substring(0, 1) == '\\' || match.substring(match.length - 6, match.length - 5) == '\\') {
-						return match;
-					};
-					var contentOfQuotes = match;
-					contentOfQuotes = contentOfQuotes.replace(/&quot;/g, '<synlighter-double-quote>');
-					//contentOfQuotes = contentOfQuotes.replace(/<span class="synlighter-highlight-css-doubequote">&quot;/g, '<synlighter-double-quote>');
-					//contentOfQuotes = contentOfQuotes.replace(/&quot;<\/span>/g, '<synlighter-double-quote>');
-					contentOfQuotes = contentOfQuotes.replace(/\/\//g, '&#47&#47');
-					contentOfQuotes = contentOfQuotes.replace(/^&#39;/, '');
-					contentOfQuotes = contentOfQuotes.replace(/&#39;$/, '');
-					var quoteMarkup = '<span class="synlighter-highlight-' + lang + '-singlequote">&#39;</span>';
-					return quoteMarkup + '<span class="synlighter-highlight-' + lang + '-singlequote-content">' + contentOfQuotes + '</span>' + quoteMarkup;
-				});
-				return highlightedSyntax;
-			}
-			var highlightDoubleQuotes = function(lang, highlightedSyntax) {
-				highlightedSyntax = highlightedSyntax.replace(/\\?&quot;.*?\\?&quot;/g, function(match) {
-					if(match.substring(0, 1) == '\\' || match.substring(match.length - 7, match.length - 6) == '\\') {
-						return match;
-					};
-					var contentOfQuotes = match;
-					contentOfQuotes = contentOfQuotes.replace(/&#39;/g, '<synlighter-single-quote>');
-					//contentOfQuotes = contentOfQuotes.replace(/<span class="synlighter-highlight-css-singlequote">&#39;/g, '<synlighter-single-quote>');
-					//contentOfQuotes = contentOfQuotes.replace(/&#39;<\/span>/g, '<synlighter-single-quote>');
-					contentOfQuotes = contentOfQuotes.replace(/\/\//g, '&#47&#47');
-					contentOfQuotes = contentOfQuotes.replace(/^&quot;/, '');
-					contentOfQuotes = contentOfQuotes.replace(/&quot;$/, '');
-					var quoteMarkup = '<span class="synlighter-highlight-' + lang + '-doublequote">&quot;</span>';
-					return quoteMarkup + '<span class="synlighter-highlight-' + lang + '-doublequote-content">' + contentOfQuotes + '</span>' + quoteMarkup;
-				});
-				return highlightedSyntax;
-			}
-			if(doubleQuoteArray[0].length > singleQuoteArray[0].length) {
-				// ' (single quote) comes first
-				highlightedSyntax = highlightSingleQuotes(lang, highlightedSyntax);
-				highlightedSyntax = highlightDoubleQuotes(lang, highlightedSyntax);
-			} else {
-				// " (double quote) comes first
-				highlightedSyntax = highlightDoubleQuotes(lang, highlightedSyntax);
-				highlightedSyntax = highlightSingleQuotes(lang, highlightedSyntax);
-			}
-			highlightedSyntax = highlightedSyntax.replace(/<synlighter-single-quote>/g, '&#39;');
-			highlightedSyntax = highlightedSyntax.replace(/<synlighter-double-quote>/g, '&quot;');
 			return highlightedSyntax;
 		}
 		// Comment highlighting function
@@ -626,17 +285,6 @@ $(document).ready(function(e) {
 					return '<span class="synlighter-highlight-' + lang + '-comment">' + matched + '</span>';
 				});
 			}
-			if(lang == 'js' || lang == 'php' || lang == 'css') {
-				highlightedSyntax = highlightedSyntax.replace(/\\?&#47;\*.*?\*\\?&#47;/g, function(match) {
-					if(match.substring(0, 1) == '\\' || match.substring(match.length - 6, match.length - 5) == '\\') {
-						return match;
-					};
-					var matched = match;
-					matched = matched.replace(/&#39;/, '<synlighter-single-quote>');
-					matched = matched.replace(/&quot;/, '<synlighter-double-quote>');
-					return '<span class="synlighter-highlight-' + lang + '-comment">' + matched + '</span>';
-				});
-			}
 			return highlightedSyntax;
 		}
 		// HTML highlighting function
@@ -644,297 +292,14 @@ $(document).ready(function(e) {
 			var tagsDark = {};
 			tagsDark['a'] = 'color:#93da7e;';
 			tagsDark['script'] = 'color:#ffc5b3;';
-			tagsDark['style'] = 'color:#ffb0ea;';
-			tagsDark['link'] = 'color:#ffccf1;';
-			tagsDark['li'] = 'color:#80ff9a;';
-			tagsDark['h1'] = 'color:#ffc780;';
-			tagsDark['h2'] = 'color:#ffc780;';
-			tagsDark['h3'] = 'color:#ffc780;';
-			tagsDark['h4'] = 'color:#ffc780;';
-			tagsDark['h5'] = 'color:#ffc780;';
-			tagsDark['h6'] = 'color:#ffc780;';
-			tagsDark['p'] = 'color:#ffc780;';
-			tagsDark['form'] = 'color:#ffff80;';
-			tagsDark['code'] = 'color:#ffb580;';
-			tagsDark['pre'] = 'color:#cdff80;';
-			tagsDark['input'] = 'color:#ffff80;';
 			var scriptCount = 0;
 			var scriptArray = {};
-			highlightedSyntax = highlightedSyntax.replace(/&lt;script[(&nbsp;)(&quot;)(&#45;)(&#39;)(&#47;)\.A-Za-z0-9]*&gt;.*?&lt;&#47;script&gt;/g, function(match) {
-				var matched = match;
-				var beginning = '';
-				var end = '';
-				matched = matched.replace(/^&lt;script[(&nbsp;)(&quot;)(&#45;)(&#39;)(&#47;)\.A-Za-z0-9]*&gt;/, function(match) {
-					beginning = match;
-					return '';
-				});
-				matched = matched.replace(/&lt;&#47;script&gt;$/, function(match) {
-					end = match;
-					return '';
-				});
-				scriptArray[scriptCount] = matched;
-				return beginning + '<synlighter-script-' + scriptCount + '>' + end;
-			});
-			highlightedSyntax = highlightedSyntax.replace(/&lt;[a-zA-Z1-9!&#47;].*?&gt;/g, function(match) {
-				var inTag = match;
-				tagIsComment = inTag.replace(/^&lt;!&#45;&#45;/, '');
-				tagIsComment = tagIsComment.replace(/&#45;&#45;&gt;$/, '');
-				if(inTag == '&lt;!&#45;&#45;' + tagIsComment + '&#45;&#45;&gt;') {
-					return '<span class="synlighter-highlight-html-comment">' + inTag + '</span>';
-				} else {
-					inTag = inTag.replace(/&quot;.*?&quot;/g, function(match) {
-						var matched = match;
-						matched = matched.replace(/^&quot;/, '');
-						matched = matched.replace(/&quot;$/, '');
-						return '<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">' + matched + '</span><span class="synlighter-highlight-html-doublequote">&quot;</span>';
-					});
-					inTag = inTag.replace(/&#39;.*?&#39;/g, function(match) {
-						var matched = match;
-						matched = matched.replace(/^&#39;/, '');
-						matched = matched.replace(/&#39;$/, '');
-						return '<span class="synlighter-highlight-html-singlequote">&#39;</span><span class="synlighter-highlight-html-singlequote-content">' + matched + '</span><span class="synlighter-highlight-html-singlequote">&#39;</span>';
-					});
-					inTag = inTag.replace(/\&nbsp;[a-zA-Z(&#45;)]*&#61;.*?/g, function(match) {
-						attr = match.replace(/&#61;/, '');
-						attr = attr.replace(/&nbsp;/, '');
-						return '&nbsp;<span class="synlighter-highlight-html-attr">' + attr + '</span>&#61;';
-					});
-					var tag = inTag.split('&nbsp;');
-					tag = tag[0];
-					tag = tag.replace('&lt;', '');
-					tag = tag.replace('&gt;', '');
-					tag = tag.replace('&#47;', '');
-					var regExp = new RegExp('^&lt;' + tag);
-					inTag = inTag.replace(regExp, '&lt;<span class="synlighter-highlight-html-tagname">' + tag + '</span>');
-					if(tagsDark[tag] != null) {
-						return '<span class="synlighter-highlight-html-tag-default" style="' + tagsDark[tag] + '">' + inTag + '</span>';
-					} else {
-						return '<span class="synlighter-highlight-html-tag-default">' + inTag + '</span>';
-					}
-				}
-			});
 			$.each(scriptArray, function(key, script) {
 				var regexp = new RegExp('<synlighter-script-' + key + '>');
 				highlightedSyntax = highlightedSyntax.replace(regexp, highlightJS(script));
 			});
 			return highlightedSyntax;
 		};
-		// JS highlighting function
-		var highlightJS = function(highlightedSyntax) {
-			var replaceWords = ['break', 'case', 'catch', 'continue', 'debugger', 'default', 'delete', 'do', 'finally', 'var', 'return', 'for', 'while', 'new', 'in', 'switch', 'with', 'void', 'typeof', 'try', 'throw', 'this', 'else', 'null', 'true', 'false', 'instanceof'];
-			highlightedSyntax = highlightedSyntax.replace(/\w*/g, function(match) {
-				if(jQuery.inArray(match, replaceWords) > -1) {
-					return '<span class="synlighter-highlight-js-word">' + match + '</span>';
-				}
-				return match;
-			});
-			highlightedSyntax = highlightedSyntax.replace(/(\.|&nbsp;|\()[A-Za-z0-9]+(\()/g, function (match) {
-				var matched = match;
-				matched = matched.replace(/\($/, '');
-				var firstChar = matched.substring(0, 1);
-				var lastChar = matched.substring(matched.length);
-				var prefix = '';
-				if(firstChar == '.') {
-					prefix = '.';
-					matched = matched.replace(/^\./, '');
-				} else if(firstChar == '&') {
-					prefix = '&nbsp;';
-					matched = matched.replace(/^&nbsp;/, '');
-				}  else if(firstChar == '(') {
-					prefix = '(';
-					matched = matched.replace(/^\(/, '');
-				}
-				return prefix + '<span class="synlighter-highlight-js-method">' + matched + '</span>(';
-			});
-			highlightedSyntax = highlightedSyntax.replace(/(\(|\))/g, function (match) {
-				return '<span class="synlighter-highlight-js-bracket">' + match + '</span>';
-			});
-			highlightedSyntax = highlightedSyntax.replace(/(\{|\})/g, function (match) {
-				return '<span class="synlighter-highlight-js-figurebracket">' + match + '</span>';
-			});
-			highlightedSyntax = highlightedSyntax.replace(/(\[|\])/g, function (match) {
-				return '<span class="synlighter-highlight-js-squarebracket">' + match + '</span>';
-			});
-			highlightedSyntax = highlightComment('js', highlightedSyntax);
-			highlightedSyntax = highlightedSyntax.replace(/(&lt;|&gt;|&#61;|&#45;|\+|\*|&#47;)/g, function (match) {
-				return '<span class="synlighter-highlight-js-operator">' + match + '</span>';
-			});
-			highlightedSyntax = highlightedSyntax.replace(/&#58;/g, '<span class="synlighter-highlight-js-colon">&#58;</span>');
-			highlightedSyntax = highlightedSyntax.replace(/&#59;/g, '<span class="synlighter-highlight-js-semicolon">&#59;</span>');
-			highlightedSyntax = highlightedSyntax.replace(/&#44;/g, '<span class="synlighter-highlight-js-comma">&#44;</span>');
-			highlightedSyntax = highlightQuote('js', highlightedSyntax);
-			highlightedSyntax = highlightedSyntax.replace(/<synlighter-single-quote>/g, '&#39;');
-			highlightedSyntax = highlightedSyntax.replace(/<synlighter-double-quote>/g, '&quot;');
-			return highlightedSyntax;
-		}
-		// JQUERY highlighting function
-		var highlightJQUERY = function(highlightedSyntax) {
-			highlightedSyntax = highlightJS(highlightedSyntax);
-			highlightedSyntax = highlightedSyntax.replace(/(\$|jQuery)/g, function (match) {
-				return '<span class="synlighter-highlight-js-jqueryobject">' + match + '</span>';
-			});
-			return highlightedSyntax;
-		}
-		
-		
-		// Determine language
-		var languages = ['HTML', 'CSS', 'JS', 'JavaScript', 'jQuery', 'PHP'];
-		var specifiedLang = container.attr(settings.langAttr);
-		var lang, title;
-		if(specifiedLang != null) {
-			lang = null;
-			$.each(languages, function(index, language) {
-				if(lang == null && language.toLowerCase() == specifiedLang.toLowerCase()) {
-					lang = language.toLowerCase();
-					title = language;
-					return false;
-				}
-			});
-			if(lang == null) {
-				lang = 'generic';
-				title = specifiedLang;
-				if(!settings.suppressWarnings) {
-					warnings.push('Unrecognised Language: ' + specifiedLang);
-				}
-			}
-			if(lang == 'javascript') {
-				lang = 'js';
-			}
-		} else {
-			warnings.push('Language Not Specified.');
-			lang = 'generic';
-			title = 'Code';
-		}
-		
-		
-		// Determine colorscheme
-		var colorSchemeClass;
-		var colorScheme = settings.colorScheme;
-		if(colorScheme.toLowerCase() == 'light') {
-			colorSchemeClass = 'synlighter-light';
-		} else {
-			if(colorScheme.toLowerCase() != 'dark' && !settings.suppressWarnings) {
-				warnings.push('Unrecognised Color Scheme: ' + colorScheme);
-			}
-			colorSchemeClass = 'synlighter-dark';
-		}
-		
-		
-		// Save original syntax
-		var originalSyntax = container.html();
-		
-		
-		// Saving original syntax as element's data
-		if($(document).data('synlighter-increment-id') == null) {
-			$(document).data('synlighter-increment-id', 1);
-		} else {
-			$(document).data('synlighter-increment-id', $(document).data('synlighter-increment-id') + 1);
-		}
-		$(document).data('synlighter-syntax-' + $(document).data('synlighter-increment-id'), originalSyntax);
-		
-		
-		// Replace xmp tag with a div
-		var elem = $('<div class="synlighter synlighter-' + $(document).data('synlighter-increment-id') + ' ' + colorSchemeClass + '"></div>');
-		elem.data('synlighter', container.data('synlighter'));
-		container.before(elem);
-		container.remove();
-		container = elem;
-		
-		
-		// Add title
-		var titleDiv = $('<div class="synlighter-title"></div>');
-		container.append(titleDiv);
-		titleDiv.html(title);
-		var titleInfo = $('<div class="synlighter-title-info"></div>');
-		titleDiv.prepend(titleInfo);
-		if(warnings.length > 0) {
-			var allErrors = "";
-			$.each(warnings, function(index, currWarning) {
-				allErrors += "Warning #" + (index + 1) + ": " + currWarning + "\n";
-			});
-			titleInfo.prepend('<div class="synlighter-title-info-button synlighter-title-info-button-warning" title="' + allErrors + '" />');
-		}
-		
-		
-		// Cripple the syntax
-		var highlightedSyntax = originalSyntax;
-		highlightedSyntax = highlightedSyntax.replace(/,/g, '&#44;');
-		highlightedSyntax = highlightedSyntax.replace(/-/g, '&#45;');
-		highlightedSyntax = highlightedSyntax.replace(/\//g, '&#47;');
-		highlightedSyntax = highlightedSyntax.replace(/=/g, '&#61;');
-		highlightedSyntax = highlightedSyntax.replace(/\ /g, '&nbsp;');
-		highlightedSyntax = highlightedSyntax.replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;');
-		
-		
-		// Deal with new lines
-		highlightedSyntax = highlightedSyntax.replace(/^(\n)*/, '');
-		highlightedSyntax = highlightedSyntax.replace(/(\n)*$/, '');
-		highlightedSyntax = highlightedSyntax.replace(/\n/g, '<br>');
-		
-		
-		// Highlight each language
-		if(lang == 'html') highlightedSyntax = highlightHTML(highlightedSyntax);
-		if(lang == 'js') highlightedSyntax = highlightJS(highlightedSyntax);
-		if(lang == 'jquery') highlightedSyntax = highlightJQUERY(highlightedSyntax);
-		
-		
-		// Insert counter
-		var linesArray = highlightedSyntax.split('<br>');
-		var linesNum = linesArray.length;
-		var linesHTML = '';
-		var maxLength = 1;
-		var currLine = 0;
-		while(currLine < linesNum) {
-			currLine++;
-			maxLength = currLine.toString().length;
-			if(settings.counter == 'alt') {
-				if(currLine == 1 || currLine % 5 == 0) {
-					linesHTML += currLine + '<br>';
-				} else {
-					linesHTML += '<br>';
-				}
-			} else {
-				linesHTML += currLine + '<br>';
-			}
-		}
-		container.append('<div class="synlighter-counter">' + linesHTML + '</div>');
-		var syntaxPadding = maxLength * 10 + 16 + 10;
-		
-		
-		// Useless code for line at the momment
-		/*
-		var finalSyntax = '<span class="synlighter-syntax-line synlighter-syntax-line-odd" style="padding-right:16px;padding-left:' + syntaxPadding + 'px;"></span>';
-		var lineClass = '';
-		$.each(linesArray, function(number, line) {
-			number += 2;
-			if(number % 2 == 0) {
-				lineClass = 'synlighter-syntax-line-even';
-			} else {
-				lineClass = 'synlighter-syntax-line-odd';
-			}
-			finalSyntax += '<span class="synlighter-syntax-line ' + lineClass + '" style="padding-right:16px;padding-left:' + syntaxPadding + 'px;">' + line + '</span>';
-		});
-		if(linesNum % 2 == 0) {
-			lineClass = 'synlighter-syntax-line-even';
-		} else {
-			lineClass = 'synlighter-syntax-line-odd';
-		}
-		finalSyntax += '<span class="synlighter-syntax-line ' + lineClass + '" style="padding-right:16px;padding-left:' + syntaxPadding + 'px;"></span>';
-		highlightedSyntax = finalSyntax;
-		*/
-		
-		// Add \n in the beginning and in the end of the syntax to improve regex performance
-		//highlightedSyntax = '<br>' + highlightedSyntax + '<br>';
-		
-		
-		// Display syntax
-		container.append('<div class="synlighter-syntax synlighter-syntax-' + lang + '"><code class="synlighter-syntax-code" style="padding-right:16px;padding-left:' + syntaxPadding + 'px;"><pre class="synlighter-syntax-pre">' + highlightedSyntax + '</pre></code></div>');
-		
-		
-		this.getSyntax = function() {
-			return originalSyntax;
-		}
-	};
 	$.fn.synlighterRawSyntax = function(id) {
 		return this.each(function() {
 			var element = $(this);
@@ -964,12 +329,35 @@ $(document).ready(function(e) {
 })(jQuery);
 </xmp>
 
-<hr>
 
-Features
-<ul>
-<li>Smart quote highlighting - ignores escaped quotation marks and quotation marks inside quotes.</li>
-</ul>
+	<code><pre id="display"></pre></code>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.js" language="javascript"></script>
+    <script src="synlighter/jquery.synlighter.js" language="javascript"></script>
+	<script src="node_modules/diff/dist/diff.js"></script>
+    <script>
+		var originalResult = [];
+		originalResult.push('<span class="synlighter-highlight-css-comment">&#47;*&nbsp;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS3&#44;&nbsp;Please!<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Update&#58;&nbsp;We&nbsp;recommend&nbsp;using&nbsp;Autoprefixer&nbsp;instead&nbsp;of&nbsp;CSS3Please.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;can&nbsp;edit&nbsp;the&nbsp;underlined&nbsp;values&nbsp;in&nbsp;this&nbsp;css&nbsp;file&#44;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;but&nbsp;don<synlighter-single-quote>t&nbsp;worry&nbsp;about&nbsp;making&nbsp;sure&nbsp;the&nbsp;corresponding<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values&nbsp;match&#44;&nbsp;that<synlighter-single-quote>s&nbsp;all&nbsp;done&nbsp;automagically&nbsp;for&nbsp;you.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whenever&nbsp;you&nbsp;want&#44;&nbsp;you&nbsp;can&nbsp;copy&nbsp;the&nbsp;whole&nbsp;or&nbsp;part&nbsp;of<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this&nbsp;page&nbsp;and&nbsp;paste&nbsp;it&nbsp;into&nbsp;your&nbsp;own&nbsp;stylesheet.<br>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&nbsp;*&#47;</span><br><br>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[to&nbsp;clipboard]&nbsp;[toggle&nbsp;rule&nbsp;off]&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-class">.box_round&#58;hover&nbsp;&#35;test&#58;not<span class="synlighter-highlight-css-bracket">(</span>&#58;first&#45;child<span class="synlighter-highlight-css-bracket">)</span>&nbsp;</span><span class="synlighter-highlight-css-figurebracket">{</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">border&#45;radius</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;12px</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Android&nbsp;2.1+&#44;&nbsp;Chrome&#44;&nbsp;Firefox&nbsp;4+&#44;&nbsp;IE&nbsp;9+&#44;&nbsp;iOS&nbsp;4+&#44;&nbsp;Opera&nbsp;10.50+&#44;&nbsp;Safari&nbsp;5+&nbsp;*&#47;</span><br><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;useful&nbsp;if&nbsp;you&nbsp;don<synlighter-single-quote>t&nbsp;want&nbsp;a&nbsp;bg&nbsp;color&nbsp;from&nbsp;leaking&nbsp;outside&nbsp;the&nbsp;border&#58;&nbsp;*&#47;</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">background&#45;clip</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;padding&#45;box</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Android&nbsp;2.2+&#44;&nbsp;Chrome&#44;&nbsp;Firefox&nbsp;4+&#44;&nbsp;IE&nbsp;9+&#44;&nbsp;iOS&nbsp;4+&#44;&nbsp;Opera&nbsp;10.50+&#44;&nbsp;Safari&nbsp;4+&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-figurebracket">}</span><br><span class="synlighter-highlight-css-comment">&#47;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[to&nbsp;clipboard]&nbsp;[toggle&nbsp;inset&nbsp;on]&nbsp;[toggle&nbsp;rule&nbsp;off]&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-class">.box_shadow&nbsp;</span><span class="synlighter-highlight-css-figurebracket">{</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;webkit&#45;box&#45;shadow</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;0px&nbsp;0px&nbsp;4px&nbsp;0px&nbsp;&#35;ffffff</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Android&nbsp;2.3+&#44;&nbsp;iOS&nbsp;4.0.2&#45;4.2&#44;&nbsp;Safari&nbsp;3&#45;4&nbsp;*&#47;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">box&#45;shadow</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;0px&nbsp;0px&nbsp;4px&nbsp;0px&nbsp;&#35;ffffff</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Chrome&nbsp;6+&#44;&nbsp;Firefox&nbsp;4+&#44;&nbsp;IE&nbsp;9+&#44;&nbsp;iOS&nbsp;5+&#44;&nbsp;Opera&nbsp;10.50+&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-figurebracket">}</span><br><span class="synlighter-highlight-css-comment">&#47;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[to&nbsp;clipboard]&nbsp;[toggle&nbsp;rule&nbsp;off]&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-class">.box_gradient&nbsp;</span><span class="synlighter-highlight-css-figurebracket">{</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">background&#45;color</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;&#35;444444</span><span class="synlighter-highlight-css-semicolon">;</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">background&#45;image</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;&#45;webkit&#45;linear&#45;gradient<span class="synlighter-highlight-css-bracket">(</span>top&#44;&nbsp;&#35;444444&#44;&nbsp;&#35;999999<span class="synlighter-highlight-css-bracket">)</span></span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Chrome&nbsp;10&#45;25&#44;&nbsp;iOS&nbsp;5+&#44;&nbsp;Safari&nbsp;5.1+&nbsp;*&#47;</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">background&#45;image</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linear&#45;gradient<span class="synlighter-highlight-css-bracket">(</span>to&nbsp;bottom&#44;&nbsp;&#35;444444&#44;&nbsp;&#35;999999<span class="synlighter-highlight-css-bracket">)</span></span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Chrome&nbsp;26&#44;&nbsp;Firefox&nbsp;16+&#44;&nbsp;IE&nbsp;10+&#44;&nbsp;Opera&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-figurebracket">}</span><br><span class="synlighter-highlight-css-comment">&#47;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[to&nbsp;clipboard]&nbsp;[toggle&nbsp;rule&nbsp;on]<br><span class="synlighter-highlight-css-class">.box_rgba&nbsp;</span><span class="synlighter-highlight-css-figurebracket">{</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">background&#45;color</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;transparent</span><span class="synlighter-highlight-css-semicolon">;</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">background&#45;color</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;rgba<span class="synlighter-highlight-css-bracket">(</span>180&#44;&nbsp;180&#44;&nbsp;144&#44;&nbsp;0.6<span class="synlighter-highlight-css-bracket">)</span></span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;&#47;*&nbsp;Chrome&#44;&nbsp;Firefox&nbsp;3+&#44;&nbsp;IE&nbsp;9+&#44;&nbsp;Opera&nbsp;10.10+&#44;&nbsp;Safari&nbsp;3+<br><span class="synlighter-highlight-css-figurebracket">}</span><br>&#47;*&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-comment">&#47;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[to&nbsp;clipboard]&nbsp;[toggle&nbsp;rule&nbsp;on]<br><span class="synlighter-highlight-css-class">.box_rotate&nbsp;</span><span class="synlighter-highlight-css-figurebracket">{</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;webkit&#45;transform</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;rotate<span class="synlighter-highlight-css-bracket">(</span>7.5deg<span class="synlighter-highlight-css-bracket">)</span></span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;&#47;*&nbsp;Chrome&#44;&nbsp;Opera&nbsp;15+&#44;&nbsp;Safari&nbsp;3.1+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;ms&#45;transform</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;rotate<span class="synlighter-highlight-css-bracket">(</span>7.5deg<span class="synlighter-highlight-css-bracket">)</span></span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;&#47;*&nbsp;IE&nbsp;9<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">transform</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;rotate<span class="synlighter-highlight-css-bracket">(</span>7.5deg<span class="synlighter-highlight-css-bracket">)</span></span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;&#47;*&nbsp;Firefox&nbsp;16+&#44;&nbsp;IE&nbsp;10+&#44;&nbsp;Opera<br><span class="synlighter-highlight-css-figurebracket">}</span><br>&#47;*&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-comment">&#47;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[to&nbsp;clipboard]&nbsp;[toggle&nbsp;rule&nbsp;on]<br><span class="synlighter-highlight-css-class">.box_scale&nbsp;</span><span class="synlighter-highlight-css-figurebracket">{</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;webkit&#45;transform</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;scale<span class="synlighter-highlight-css-bracket">(</span>0.8<span class="synlighter-highlight-css-bracket">)</span></span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;&#47;*&nbsp;Chrome&#44;&nbsp;Opera&nbsp;15+&#44;&nbsp;Safari&nbsp;3.1+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;ms&#45;transform</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;scale<span class="synlighter-highlight-css-bracket">(</span>0.8<span class="synlighter-highlight-css-bracket">)</span></span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;&#47;*&nbsp;IE&nbsp;9<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">transform</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;scale<span class="synlighter-highlight-css-bracket">(</span>0.8<span class="synlighter-highlight-css-bracket">)</span></span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;&#47;*&nbsp;Firefox&nbsp;16+&#44;&nbsp;IE&nbsp;10+&#44;&nbsp;Opera<br><span class="synlighter-highlight-css-figurebracket">}</span><br>&#47;*&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-comment">&#47;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[to&nbsp;clipboard]&nbsp;[toggle&nbsp;rule&nbsp;on]<br><span class="synlighter-highlight-css-class">.box_3dtransforms&nbsp;</span><span class="synlighter-highlight-css-figurebracket">{</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;webkit&#45;perspective</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;300px</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;&#47;*&nbsp;Chrome&nbsp;12+&#44;&nbsp;Safari&nbsp;4+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;ms&#45;perspective</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;300px</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;&#47;*&nbsp;IE&nbsp;10<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">perspective</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;300px</span><span class="synlighter-highlight-css-semicolon">;</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;webkit&#45;transform</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;rotateY<span class="synlighter-highlight-css-bracket">(</span>180deg<span class="synlighter-highlight-css-bracket">)</span></span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;webkit&#45;transform&#45;style</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;preserve&#45;3d</span><span class="synlighter-highlight-css-semicolon">;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;ms&#45;transform</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;rotateY<span class="synlighter-highlight-css-bracket">(</span>180deg<span class="synlighter-highlight-css-bracket">)</span></span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;ms&#45;transform&#45;style</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;preserve&#45;3d</span><span class="synlighter-highlight-css-semicolon">;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">transform</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;rotateY<span class="synlighter-highlight-css-bracket">(</span>180deg<span class="synlighter-highlight-css-bracket">)</span></span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">transform&#45;style</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;preserve&#45;3d</span><span class="synlighter-highlight-css-semicolon">;</span><br><span class="synlighter-highlight-css-figurebracket">}</span><br>&#47;*&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-comment">&#47;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[to&nbsp;clipboard]&nbsp;[toggle&nbsp;rule&nbsp;off]&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-class">.box_transition&nbsp;</span><span class="synlighter-highlight-css-figurebracket">{</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;webkit&#45;transition</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;all&nbsp;0.3s&nbsp;ease&#45;out</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Android&nbsp;2.1+&#44;&nbsp;Chrome&nbsp;1&#45;25&#44;&nbsp;iOS&nbsp;3.2&#45;6.1&#44;&nbsp;Safari&nbsp;3.2&#45;6&nbsp;&nbsp;*&#47;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">transition</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;all&nbsp;0.3s&nbsp;ease&#45;out</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Chrome&nbsp;26&#44;&nbsp;Firefox&nbsp;16+&#44;&nbsp;iOS&nbsp;7+&#44;&nbsp;IE&nbsp;10+&#44;&nbsp;Opera&#44;&nbsp;Safari&nbsp;6.1+&nbsp;&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-figurebracket">}</span><br><span class="synlighter-highlight-css-comment">&#47;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[to&nbsp;clipboard]&nbsp;[toggle&nbsp;rule&nbsp;off]&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-class">.box_textshadow&nbsp;</span><span class="synlighter-highlight-css-figurebracket">{</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">text&#45;shadow</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;1px&nbsp;1px&nbsp;3px&nbsp;&#35;888</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Chrome&#44;&nbsp;Firefox&nbsp;3.5+&#44;&nbsp;IE&nbsp;10+&#44;&nbsp;Opera&nbsp;9+&#44;&nbsp;Safari&nbsp;1+&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-figurebracket">}</span><br><span class="synlighter-highlight-css-comment">&#47;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[to&nbsp;clipboard]&nbsp;[toggle&nbsp;rule&nbsp;off]&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-class">.box_opacity&nbsp;</span><span class="synlighter-highlight-css-figurebracket">{</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">opacity</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;0.9</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Android&nbsp;2.1+&#44;&nbsp;Chrome&nbsp;4+&#44;&nbsp;Firefox&nbsp;2+&#44;&nbsp;IE&nbsp;9+&#44;&nbsp;iOS&nbsp;3.2+&#44;&nbsp;Opera&nbsp;9+&#44;&nbsp;Safari&nbsp;3.1+&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-figurebracket">}</span><br><span class="synlighter-highlight-css-comment">&#47;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[to&nbsp;clipboard]&nbsp;*&#47;</span><br>*&nbsp;<span class="synlighter-highlight-css-figurebracket">{</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;webkit&#45;box&#45;sizing</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;border&#45;box</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Android&nbsp;≤&nbsp;2.3&#44;&nbsp;iOS&nbsp;≤&nbsp;4&nbsp;*&#47;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;moz&#45;box&#45;sizing</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;border&#45;box</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Firefox&nbsp;≤&nbsp;28&nbsp;*&#47;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">box&#45;sizing</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;border&#45;box</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Chrome&#44;&nbsp;Firefox&nbsp;29+&#44;&nbsp;IE&nbsp;8+&#44;&nbsp;Opera&#44;&nbsp;Safari&nbsp;5.1&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-figurebracket">}</span><br><span class="synlighter-highlight-css-comment">&#47;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[to&nbsp;clipboard]&nbsp;[toggle&nbsp;rule&nbsp;off]&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-class">.box_bgsize&nbsp;</span><span class="synlighter-highlight-css-figurebracket">{</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;webkit&#45;background&#45;size</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;100%&nbsp;100%</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Safari&nbsp;3&#45;4&nbsp;*&#47;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">background&#45;size</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;100%&nbsp;100%</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Chrome&#44;&nbsp;Firefox&nbsp;4+&#44;&nbsp;IE&nbsp;9+&#44;&nbsp;Opera&#44;&nbsp;Safari&nbsp;5+&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-figurebracket">}</span><br><span class="synlighter-highlight-css-comment">&#47;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[to&nbsp;clipboard]&nbsp;[toggle&nbsp;rule&nbsp;on]<br><span class="synlighter-highlight-css-class">.box_columns&nbsp;</span><span class="synlighter-highlight-css-figurebracket">{</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;webkit&#45;column&#45;count</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;2</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;webkit&#45;column&#45;gap</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;15px</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&#47;*&nbsp;Chrome&#44;&nbsp;Safari&nbsp;3<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;moz&#45;column&#45;count</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;2</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;moz&#45;column&#45;gap</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;15px</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&#47;*&nbsp;Firefox&nbsp;3.5+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">column&#45;count</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;2</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">column&#45;gap</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;15px</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;&#47;*&nbsp;Opera&nbsp;11+<br><span class="synlighter-highlight-css-figurebracket">}</span><br>&#47;*&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-comment">&#47;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[to&nbsp;clipboard]&nbsp;[toggle&nbsp;rule&nbsp;off]&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-class">.box_animation&#58;hover&nbsp;</span><span class="synlighter-highlight-css-figurebracket">{</span><br>&nbsp;&nbsp;<span class="synlighter-highlight-css-property">&#45;webkit&#45;animation</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;myanim&nbsp;5s&nbsp;infinite</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Chrome&#44;&nbsp;Opera&nbsp;15+&#44;&nbsp;Safari&nbsp;5+&nbsp;*&#47;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-css-property">animation</span><span class="synlighter-highlight-css-colon">:</span><span class="synlighter-highlight-css-value">&nbsp;myanim&nbsp;5s&nbsp;infinite</span><span class="synlighter-highlight-css-semicolon">;</span>&nbsp;<span class="synlighter-highlight-css-comment">&#47;*&nbsp;Chrome&#44;&nbsp;Firefox&nbsp;16+&#44;&nbsp;IE&nbsp;10+&#44;&nbsp;Opera&nbsp;*&#47;</span><br><span class="synlighter-highlight-css-figurebracket">}</span>');
+		originalResult.push('<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">div</span>&nbsp;<span class="synlighter-highlight-html-attr">id</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">top</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&nbsp;<span class="synlighter-highlight-html-attr">class</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">page</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&nbsp;<span class="synlighter-highlight-html-attr">role</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">document</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">header</span>&nbsp;<span class="synlighter-highlight-html-attr">role</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">banner</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h1</span>&gt;</span>HTML5&nbsp;Test&nbsp;Page<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h1&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span>This&nbsp;is&nbsp;a&nbsp;test&nbsp;page&nbsp;filled&nbsp;with&nbsp;common&nbsp;HTML&nbsp;elements&nbsp;to&nbsp;be&nbsp;used&nbsp;to&nbsp;provide&nbsp;visual&nbsp;feedback&nbsp;whilst&nbsp;building&nbsp;CSS&nbsp;systems&nbsp;and&nbsp;frameworks.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;header&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">nav</span>&nbsp;<span class="synlighter-highlight-html-attr">role</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">navigation</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">ul</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;<span class="synlighter-highlight-html-tagname">li</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;text</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>Text<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">ul</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;<span class="synlighter-highlight-html-tagname">li</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;text__headings</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>Headings<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;&#47;li&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;<span class="synlighter-highlight-html-tagname">li</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;text__paragraphs</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>Paragraphs<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;&#47;li&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;<span class="synlighter-highlight-html-tagname">li</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;text__blockquotes</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>Blockquotes<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;&#47;li&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;<span class="synlighter-highlight-html-tagname">li</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;text__lists</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>Lists<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;&#47;li&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;<span class="synlighter-highlight-html-tagname">li</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;text__hr</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>Horizontal&nbsp;rules<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;&#47;li&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;<span class="synlighter-highlight-html-tagname">li</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;text__tables</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>Tabular&nbsp;data<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;&#47;li&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;<span class="synlighter-highlight-html-tagname">li</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;text__code</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>Code<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;&#47;li&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;<span class="synlighter-highlight-html-tagname">li</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;text__inline</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>Inline&nbsp;elements<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;&#47;li&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;ul&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#80ff9a;">&lt;&#47;li&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;ul&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;nav&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">main</span>&nbsp;<span class="synlighter-highlight-html-attr">role</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">main</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">section</span>&nbsp;<span class="synlighter-highlight-html-attr">id</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">text</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">header</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h1</span>&gt;</span>Text<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h1&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;header&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">article</span>&nbsp;<span class="synlighter-highlight-html-attr">id</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">text__headings</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">header</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h1</span>&gt;</span>Headings<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h1&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;header&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">footer</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;top</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>[Top]<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;footer&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;article&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">article</span>&nbsp;<span class="synlighter-highlight-html-attr">id</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">text__paragraphs</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">header</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h1</span>&gt;</span>Paragraphs<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h1&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;header&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">div</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span>A&nbsp;paragraph&nbsp;(from&nbsp;the&nbsp;Greek&nbsp;paragraphos&#44;&nbsp;“to&nbsp;write&nbsp;beside”&nbsp;or&nbsp;“written&nbsp;beside”)&nbsp;is&nbsp;a&nbsp;self&#45;contained&nbsp;unit&nbsp;of&nbsp;a&nbsp;discourse&nbsp;in&nbsp;writing&nbsp;dealing&nbsp;with&nbsp;a&nbsp;particular&nbsp;point&nbsp;or&nbsp;idea.&nbsp;A&nbsp;paragraph&nbsp;consists&nbsp;of&nbsp;one&nbsp;or&nbsp;more&nbsp;sentences.&nbsp;Though&nbsp;not&nbsp;required&nbsp;by&nbsp;the&nbsp;syntax&nbsp;of&nbsp;any&nbsp;language&#44;&nbsp;paragraphs&nbsp;are&nbsp;usually&nbsp;an&nbsp;expected&nbsp;part&nbsp;of&nbsp;formal&nbsp;writing&#44;&nbsp;used&nbsp;to&nbsp;organize&nbsp;longer&nbsp;prose.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;div&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">footer</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;top</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>[Top]<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;footer&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;article&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">article</span>&nbsp;<span class="synlighter-highlight-html-attr">id</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">text__blockquotes</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">header</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h1</span>&gt;</span>Blockquotes<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h1&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;header&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">div</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">blockquote</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span>A&nbsp;block&nbsp;quotation&nbsp;(also&nbsp;known&nbsp;as&nbsp;a&nbsp;long&nbsp;quotation&nbsp;or&nbsp;extract)&nbsp;is&nbsp;a&nbsp;quotation&nbsp;in&nbsp;a&nbsp;written&nbsp;document&#44;&nbsp;that&nbsp;is&nbsp;set&nbsp;off&nbsp;from&nbsp;the&nbsp;main&nbsp;text&nbsp;as&nbsp;a&nbsp;paragraph&#44;&nbsp;or&nbsp;block&nbsp;of&nbsp;text.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span>It&nbsp;is&nbsp;typically&nbsp;distinguished&nbsp;visually&nbsp;using&nbsp;indentation&nbsp;and&nbsp;a&nbsp;different&nbsp;typeface&nbsp;or&nbsp;smaller&nbsp;size&nbsp;quotation.&nbsp;It&nbsp;may&nbsp;or&nbsp;may&nbsp;not&nbsp;include&nbsp;a&nbsp;citation&#44;&nbsp;usually&nbsp;placed&nbsp;at&nbsp;the&nbsp;bottom.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">cite</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;!</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>Said&nbsp;no&nbsp;one&#44;&nbsp;ever.<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;cite&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;blockquote&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;div&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">footer</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;top</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>[Top]<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;footer&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;article&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">article</span>&nbsp;<span class="synlighter-highlight-html-attr">id</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">text__inline</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">header</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h1</span>&gt;</span>Inline&nbsp;elements<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h1&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;header&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">div</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;!</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>This&nbsp;is&nbsp;a&nbsp;text&nbsp;link<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span>.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">strong</span>&gt;</span>Strong&nbsp;is&nbsp;used&nbsp;to&nbsp;indicate&nbsp;strong&nbsp;importance.<span class="synlighter-highlight-html-tag-default">&lt;&#47;strong&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">em</span>&gt;</span>This&nbsp;text&nbsp;has&nbsp;added&nbsp;emphasis.<span class="synlighter-highlight-html-tag-default">&lt;&#47;em&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span>The&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">b</span>&gt;</span>b&nbsp;element<span class="synlighter-highlight-html-tag-default">&lt;&#47;b&gt;</span>&nbsp;is&nbsp;stylistically&nbsp;different&nbsp;text&nbsp;from&nbsp;normal&nbsp;text&#44;&nbsp;without&nbsp;any&nbsp;special&nbsp;importance.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span>The&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">i</span>&gt;</span>i&nbsp;element<span class="synlighter-highlight-html-tag-default">&lt;&#47;i&gt;</span>&nbsp;is&nbsp;text&nbsp;that&nbsp;is&nbsp;offset&nbsp;from&nbsp;the&nbsp;normal&nbsp;text.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span>The&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">u</span>&gt;</span>u&nbsp;element<span class="synlighter-highlight-html-tag-default">&lt;&#47;u&gt;</span>&nbsp;is&nbsp;text&nbsp;with&nbsp;an&nbsp;unarticulated&#44;&nbsp;though&nbsp;explicitly&nbsp;rendered&#44;&nbsp;non&#45;textual&nbsp;annotation.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">del</span>&gt;</span>This&nbsp;text&nbsp;is&nbsp;deleted<span class="synlighter-highlight-html-tag-default">&lt;&#47;del&gt;</span>&nbsp;and&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">ins</span>&gt;</span>This&nbsp;text&nbsp;is&nbsp;inserted<span class="synlighter-highlight-html-tag-default">&lt;&#47;ins&gt;</span>.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">s</span>&gt;</span>This&nbsp;text&nbsp;has&nbsp;a&nbsp;strikethrough<span class="synlighter-highlight-html-tag-default">&lt;&#47;s&gt;</span>.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span>Superscript<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">sup</span>&gt;</span>®<span class="synlighter-highlight-html-tag-default">&lt;&#47;sup&gt;</span>.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span>Subscript&nbsp;for&nbsp;things&nbsp;like&nbsp;H<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">sub</span>&gt;</span>2<span class="synlighter-highlight-html-tag-default">&lt;&#47;sub&gt;</span>O.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">small</span>&gt;</span>This&nbsp;small&nbsp;text&nbsp;is&nbsp;small&nbsp;for&nbsp;for&nbsp;fine&nbsp;print&#44;&nbsp;etc.<span class="synlighter-highlight-html-tag-default">&lt;&#47;small&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span>Abbreviation&#58;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">abbr</span>&nbsp;<span class="synlighter-highlight-html-attr">title</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">HyperText&nbsp;Markup&nbsp;Language</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>HTML<span class="synlighter-highlight-html-tag-default">&lt;&#47;abbr&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">q</span>&nbsp;<span class="synlighter-highlight-html-attr">cite</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">https&#58;&#47;&#47;developer.mozilla.org&#47;en&#45;US&#47;docs&#47;HTML&#47;Element&#47;q</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>This&nbsp;text&nbsp;is&nbsp;a&nbsp;short&nbsp;inline&nbsp;quotation.<span class="synlighter-highlight-html-tag-default">&lt;&#47;q&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">cite</span>&gt;</span>This&nbsp;is&nbsp;a&nbsp;citation.<span class="synlighter-highlight-html-tag-default">&lt;&#47;cite&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span>The&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">dfn</span>&gt;</span>dfn&nbsp;element<span class="synlighter-highlight-html-tag-default">&lt;&#47;dfn&gt;</span>&nbsp;indicates&nbsp;a&nbsp;definition.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span>The&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">mark</span>&gt;</span>mark&nbsp;element<span class="synlighter-highlight-html-tag-default">&lt;&#47;mark&gt;</span>&nbsp;indicates&nbsp;a&nbsp;highlight.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span>The&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">var</span>&gt;</span>variable&nbsp;element<span class="synlighter-highlight-html-tag-default">&lt;&#47;var&gt;</span>&#44;&nbsp;such&nbsp;as&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">var</span>&gt;</span>x<span class="synlighter-highlight-html-tag-default">&lt;&#47;var&gt;</span>&nbsp;&#61;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">var</span>&gt;</span>y<span class="synlighter-highlight-html-tag-default">&lt;&#47;var&gt;</span>.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span>The&nbsp;time&nbsp;element&#58;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">time</span>&nbsp;<span class="synlighter-highlight-html-attr">datetime</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">2013&#45;04&#45;06T12&#58;32+00&#58;00</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>2&nbsp;weeks&nbsp;ago<span class="synlighter-highlight-html-tag-default">&lt;&#47;time&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;div&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">footer</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;top</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>[Top]<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;footer&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;article&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;section&gt;</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">section</span>&nbsp;<span class="synlighter-highlight-html-attr">id</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">embedded</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">header</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h1</span>&gt;</span>Embedded&nbsp;content<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h1&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;header&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">article</span>&nbsp;<span class="synlighter-highlight-html-attr">id</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">embedded__images</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">header</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h2</span>&gt;</span>Images<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h2&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;header&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">div</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h3</span>&gt;</span>No&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffb580;">&lt;<span class="synlighter-highlight-html-tagname">code</span>&gt;</span>&amp;lt&#59;figure&amp;gt&#59;<span class="synlighter-highlight-html-tag-default" style="color:#ffb580;">&lt;&#47;code&gt;</span>&nbsp;element<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h3&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">img</span>&nbsp;<span class="synlighter-highlight-html-attr">src</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">http&#58;&#47;&#47;placekitten.com&#47;480&#47;480</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&nbsp;<span class="synlighter-highlight-html-attr">alt</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">Image&nbsp;alt&nbsp;text</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h3</span>&gt;</span>Wrapped&nbsp;in&nbsp;a&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffb580;">&lt;<span class="synlighter-highlight-html-tagname">code</span>&gt;</span>&amp;lt&#59;figure&amp;gt&#59;<span class="synlighter-highlight-html-tag-default" style="color:#ffb580;">&lt;&#47;code&gt;</span>&nbsp;element&#44;&nbsp;no&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffb580;">&lt;<span class="synlighter-highlight-html-tagname">code</span>&gt;</span>&amp;lt&#59;figcaption&amp;gt&#59;<span class="synlighter-highlight-html-tag-default" style="color:#ffb580;">&lt;&#47;code&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h3&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">figure</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">img</span>&nbsp;<span class="synlighter-highlight-html-attr">src</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">http&#58;&#47;&#47;placekitten.com&#47;420&#47;420</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&nbsp;<span class="synlighter-highlight-html-attr">alt</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">Image&nbsp;alt&nbsp;text</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;figure&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h3</span>&gt;</span>Wrapped&nbsp;in&nbsp;a&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffb580;">&lt;<span class="synlighter-highlight-html-tagname">code</span>&gt;</span>&amp;lt&#59;figure&amp;gt&#59;<span class="synlighter-highlight-html-tag-default" style="color:#ffb580;">&lt;&#47;code&gt;</span>&nbsp;element&#44;&nbsp;with&nbsp;a&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffb580;">&lt;<span class="synlighter-highlight-html-tagname">code</span>&gt;</span>&amp;lt&#59;figcaption&amp;gt&#59;<span class="synlighter-highlight-html-tag-default" style="color:#ffb580;">&lt;&#47;code&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h3&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">figure</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">img</span>&nbsp;<span class="synlighter-highlight-html-attr">src</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">http&#58;&#47;&#47;placekitten.com&#47;420&#47;420</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&nbsp;<span class="synlighter-highlight-html-attr">alt</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">Image&nbsp;alt&nbsp;text</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">figcaption</span>&gt;</span>Here&nbsp;is&nbsp;a&nbsp;caption&nbsp;for&nbsp;this&nbsp;image.<span class="synlighter-highlight-html-tag-default">&lt;&#47;figcaption&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;figure&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;div&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">footer</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;top</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>[Top]<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;footer&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;article&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">article</span>&nbsp;<span class="synlighter-highlight-html-attr">id</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">embedded__audio</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">header</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h2</span>&gt;</span>Audio<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h2&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;header&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">div</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">audio</span>&nbsp;<span class="synlighter-highlight-html-attr">controls</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content"></span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>audio<span class="synlighter-highlight-html-tag-default">&lt;&#47;audio&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;div&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">footer</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;top</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>[Top]<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;footer&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;article&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">article</span>&nbsp;<span class="synlighter-highlight-html-attr">id</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">embedded__video</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">header</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h2</span>&gt;</span>Video<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h2&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;header&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">div</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">video</span>&nbsp;<span class="synlighter-highlight-html-attr">controls</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content"></span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>video<span class="synlighter-highlight-html-tag-default">&lt;&#47;video&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;div&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">footer</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;top</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>[Top]<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;footer&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;article&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">article</span>&nbsp;<span class="synlighter-highlight-html-attr">id</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">embedded__canvas</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">header</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h2</span>&gt;</span>Canvas<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h2&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;header&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">div</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">canvas</span>&gt;</span>canvas<span class="synlighter-highlight-html-tag-default">&lt;&#47;canvas&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;div&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">footer</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;top</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>[Top]<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;footer&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;article&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">article</span>&nbsp;<span class="synlighter-highlight-html-attr">id</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">embedded__meter</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">header</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h2</span>&gt;</span>Meter<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h2&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;header&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">div</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">meter</span>&nbsp;<span class="synlighter-highlight-html-attr">value</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">2</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&nbsp;<span class="synlighter-highlight-html-attr">min</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">0</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&nbsp;<span class="synlighter-highlight-html-attr">max</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">10</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>2&nbsp;out&nbsp;of&nbsp;10<span class="synlighter-highlight-html-tag-default">&lt;&#47;meter&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;div&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">footer</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;top</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>[Top]<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;footer&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;article&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">article</span>&nbsp;<span class="synlighter-highlight-html-attr">id</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">embedded__progress</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">header</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h2</span>&gt;</span>Progress<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h2&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;header&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">div</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">progress</span>&gt;</span>progress<span class="synlighter-highlight-html-tag-default">&lt;&#47;progress&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;div&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">footer</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;top</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>[Top]<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;footer&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;article&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">article</span>&nbsp;<span class="synlighter-highlight-html-attr">id</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">embedded__svg</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">header</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h2</span>&gt;</span>Inline&nbsp;SVG<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h2&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;header&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">div</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">svg</span>&nbsp;<span class="synlighter-highlight-html-attr">width</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">100px</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&nbsp;<span class="synlighter-highlight-html-attr">height</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">100px</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">circle</span>&nbsp;<span class="synlighter-highlight-html-attr">cx</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">100</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&nbsp;<span class="synlighter-highlight-html-attr">cy</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">100</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&nbsp;<span class="synlighter-highlight-html-attr">r</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">100</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&nbsp;<span class="synlighter-highlight-html-attr">fill</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;1fa3ec</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;circle&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;svg&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;div&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">footer</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;top</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>[Top]<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;footer&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;article&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">article</span>&nbsp;<span class="synlighter-highlight-html-attr">id</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">embedded__iframe</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">header</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">h2</span>&gt;</span>IFrame<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;h2&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;header&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">div</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">iframe</span>&nbsp;<span class="synlighter-highlight-html-attr">src</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">index.html</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&nbsp;<span class="synlighter-highlight-html-attr">height</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">300</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;iframe&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;div&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">footer</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">&#35;top</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>[Top]<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span><span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><span class="synlighter-highlight-html-tag-default">&lt;&#47;footer&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;article&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;section&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;main&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;<span class="synlighter-highlight-html-tagname">footer</span>&nbsp;<span class="synlighter-highlight-html-attr">role</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">contentinfo</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;<span class="synlighter-highlight-html-tagname">p</span>&gt;</span>Made&nbsp;by&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">http&#58;&#47;&#47;twitter.com&#47;cbracco</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>@cbracco<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span>.&nbsp;Code&nbsp;on&nbsp;<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;<span class="synlighter-highlight-html-tagname">a</span>&nbsp;<span class="synlighter-highlight-html-attr">href</span>&#61;<span class="synlighter-highlight-html-doublequote">&quot;</span><span class="synlighter-highlight-html-doublequote-content">http&#58;&#47;&#47;github.com&#47;cbracco&#47;html5&#45;test&#45;page</span><span class="synlighter-highlight-html-doublequote">&quot;</span>&gt;</span>GitHub<span class="synlighter-highlight-html-tag-default" style="color:#93da7e;">&lt;&#47;a&gt;</span>.<span class="synlighter-highlight-html-tag-default" style="color:#ffc780;">&lt;&#47;p&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-html-tag-default">&lt;&#47;footer&gt;</span><br><span class="synlighter-highlight-html-tag-default">&lt;&#47;div&gt;</span>');
+		originalResult.push('<span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-method">function</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-jqueryobject">$</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-figurebracket">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;Synlighter&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-method">function</span><span class="synlighter-highlight-js-bracket">(</span>element<span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;options<span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;synlighterVersion&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content"><span class="synlighter-highlight-js-number">2.0</span>.<span class="synlighter-highlight-js-number">0</span></span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;container&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-jqueryobject">$</span><span class="synlighter-highlight-js-bracket">(</span>element<span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;object&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-word">this</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;warnings&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-squarebracket">[</span><span class="synlighter-highlight-js-squarebracket">]</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;settings&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-jqueryobject">$</span>.<span class="synlighter-highlight-js-method">extend</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-figurebracket">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allowOverwrite<span class="synlighter-highlight-js-colon">&#58;</span>&nbsp;<span class="synlighter-highlight-js-word">true</span><span class="synlighter-highlight-js-comma">&#44;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colorScheme<span class="synlighter-highlight-js-colon">&#58;</span>&nbsp;<span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content">dark</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-comma">&#44;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxHeight<span class="synlighter-highlight-js-colon">&#58;</span>&nbsp;<span class="synlighter-highlight-js-word">null</span><span class="synlighter-highlight-js-comma">&#44;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter<span class="synlighter-highlight-js-colon">&#58;</span>&nbsp;<span class="synlighter-highlight-js-word">null</span><span class="synlighter-highlight-js-comma">&#44;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;langAttr<span class="synlighter-highlight-js-colon">&#58;</span>&nbsp;<span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content">data<span class="synlighter-highlight-js-operator">&#45;</span>language</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-comma">&#44;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suppressWarnings<span class="synlighter-highlight-js-colon">&#58;</span>&nbsp;<span class="synlighter-highlight-js-word">false</span><span class="synlighter-highlight-js-comma">&#44;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-figurebracket">}</span><span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;options&nbsp;<span class="synlighter-highlight-js-operator">|</span><span class="synlighter-highlight-js-operator">|</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><span class="synlighter-highlight-js-figurebracket">}</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-comment"><span class="synlighter-highlight-js-operator">&#47;</span><span class="synlighter-highlight-js-operator">&#47;</span>&nbsp;Quote&nbsp;highlighting&nbsp;function<br></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;highlightQuote&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-method">function</span><span class="synlighter-highlight-js-bracket">(</span>lang<span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;highlightedSyntax<span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-method">if</span><span class="synlighter-highlight-js-bracket">(</span>lang&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span><span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content">html</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">return</span>&nbsp;highlightedSyntax<span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-figurebracket">}</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">return</span>&nbsp;highlightedSyntax<span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-figurebracket">}</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-comment"><span class="synlighter-highlight-js-operator">&#47;</span><span class="synlighter-highlight-js-operator">&#47;</span>&nbsp;Comment&nbsp;highlighting&nbsp;function<br></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;highlightComment&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-method">function</span><span class="synlighter-highlight-js-bracket">(</span>lang<span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;highlightedSyntax<span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-method">if</span><span class="synlighter-highlight-js-bracket">(</span>lang&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span><span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content">js</span><span class="synlighter-highlight-js-singlequote">&#39;</span>&nbsp;<span class="synlighter-highlight-js-operator">|</span><span class="synlighter-highlight-js-operator">|</span>&nbsp;lang&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span><span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content">php</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;highlightedSyntax&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;highlightedSyntax.<span class="synlighter-highlight-js-method">replace</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-operator">&#47;</span>\\\\?&amp;&#35;<span class="synlighter-highlight-js-number">47</span><span class="synlighter-highlight-js-semicolon">&#59;</span>&amp;&#35;<span class="synlighter-highlight-js-number">47</span><span class="synlighter-highlight-js-semicolon">&#59;</span>.<span class="synlighter-highlight-js-operator">*</span>?<span class="synlighter-highlight-js-operator">&lt;</span>br<span class="synlighter-highlight-js-operator">&gt;</span><span class="synlighter-highlight-js-operator">&#47;</span>g<span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;<span class="synlighter-highlight-js-method">function</span><span class="synlighter-highlight-js-bracket">(</span>match<span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-method">if</span><span class="synlighter-highlight-js-bracket">(</span>match.<span class="synlighter-highlight-js-method">substring</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-number">0</span><span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;<span class="synlighter-highlight-js-number">1</span><span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span><span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;&#39;\\\\&#39;<span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">return</span>&nbsp;match<span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-figurebracket">}</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;matched&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;match<span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matched&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;matched.<span class="synlighter-highlight-js-method">replace</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-operator">&#47;</span>&amp;&#35;<span class="synlighter-highlight-js-number">39</span><span class="synlighter-highlight-js-semicolon">&#59;</span><span class="synlighter-highlight-js-operator">&#47;</span>g<span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;<span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content"><span class="synlighter-highlight-js-operator">&lt;</span>synlighter<span class="synlighter-highlight-js-operator">&#45;</span>single<span class="synlighter-highlight-js-operator">&#45;</span>quote<span class="synlighter-highlight-js-operator">&gt;</span></span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matched&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;matched.<span class="synlighter-highlight-js-method">replace</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-operator">&#47;</span>&amp;quot<span class="synlighter-highlight-js-semicolon">&#59;</span><span class="synlighter-highlight-js-operator">&#47;</span>g<span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;<span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content"><span class="synlighter-highlight-js-operator">&lt;</span>synlighter<span class="synlighter-highlight-js-operator">&#45;</span>double<span class="synlighter-highlight-js-operator">&#45;</span>quote<span class="synlighter-highlight-js-operator">&gt;</span></span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">return</span>&nbsp;<span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content"><span class="synlighter-highlight-js-operator">&lt;</span>span&nbsp;class<span class="synlighter-highlight-js-operator">&#61;</span>&quot;synlighter<span class="synlighter-highlight-js-operator">&#45;</span>highlight<span class="synlighter-highlight-js-operator">&#45;</span></span><span class="synlighter-highlight-js-singlequote">&#39;</span>&nbsp;<span class="synlighter-highlight-js-operator">+</span>&nbsp;lang&nbsp;<span class="synlighter-highlight-js-operator">+</span>&nbsp;<span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content"><span class="synlighter-highlight-js-operator">&#45;</span>comment&quot;<span class="synlighter-highlight-js-operator">&gt;</span></span><span class="synlighter-highlight-js-singlequote">&#39;</span>&nbsp;<span class="synlighter-highlight-js-operator">+</span>&nbsp;matched&nbsp;<span class="synlighter-highlight-js-operator">+</span>&nbsp;<span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content"><span class="synlighter-highlight-js-operator">&lt;</span><span class="synlighter-highlight-js-operator">&#47;</span>span<span class="synlighter-highlight-js-operator">&gt;</span></span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-figurebracket">}</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-figurebracket">}</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">return</span>&nbsp;highlightedSyntax<span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-figurebracket">}</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-comment"><span class="synlighter-highlight-js-operator">&#47;</span><span class="synlighter-highlight-js-operator">&#47;</span>&nbsp;HTML&nbsp;highlighting&nbsp;function<br></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;highlightHTML&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-method">function</span><span class="synlighter-highlight-js-bracket">(</span>highlightedSyntax<span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;tagsDark&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><span class="synlighter-highlight-js-figurebracket">}</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tagsDark<span class="synlighter-highlight-js-squarebracket">[</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content">a</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-squarebracket">]</span>&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content">color<span class="synlighter-highlight-js-colon">&#58;</span>&#35;<span class="synlighter-highlight-js-number">93</span>da<span class="synlighter-highlight-js-number">7</span>e<span class="synlighter-highlight-js-semicolon">&#59;</span></span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tagsDark<span class="synlighter-highlight-js-squarebracket">[</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content">script</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-squarebracket">]</span>&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content">color<span class="synlighter-highlight-js-colon">&#58;</span>&#35;ffc<span class="synlighter-highlight-js-number">5</span>b<span class="synlighter-highlight-js-number">3</span><span class="synlighter-highlight-js-semicolon">&#59;</span></span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;scriptCount&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-number">0</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;scriptArray&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><span class="synlighter-highlight-js-figurebracket">}</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-jqueryobject">$</span>.<span class="synlighter-highlight-js-method">each</span><span class="synlighter-highlight-js-bracket">(</span>scriptArray<span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;<span class="synlighter-highlight-js-method">function</span><span class="synlighter-highlight-js-bracket">(</span>key<span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;script<span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;regexp&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-word">new</span>&nbsp;<span class="synlighter-highlight-js-method">RegExp</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content"><span class="synlighter-highlight-js-operator">&lt;</span>synlighter<span class="synlighter-highlight-js-operator">&#45;</span>script<span class="synlighter-highlight-js-operator">&#45;</span></span><span class="synlighter-highlight-js-singlequote">&#39;</span>&nbsp;<span class="synlighter-highlight-js-operator">+</span>&nbsp;key&nbsp;<span class="synlighter-highlight-js-operator">+</span>&nbsp;<span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content"><span class="synlighter-highlight-js-operator">&gt;</span></span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;highlightedSyntax&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;highlightedSyntax.<span class="synlighter-highlight-js-method">replace</span><span class="synlighter-highlight-js-bracket">(</span>regexp<span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;<span class="synlighter-highlight-js-method">highlightJS</span><span class="synlighter-highlight-js-bracket">(</span>script<span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-figurebracket">}</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">return</span>&nbsp;highlightedSyntax<span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-figurebracket">}</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-jqueryobject">$</span>.fn.synlighterRawSyntax&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-method">function</span><span class="synlighter-highlight-js-bracket">(</span>id<span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">return</span>&nbsp;<span class="synlighter-highlight-js-word">this</span>.<span class="synlighter-highlight-js-method">each</span><span class="synlighter-highlight-js-bracket">(</span>function<span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;element&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-jqueryobject">$</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-word">this</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;synlighter&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;element.<span class="synlighter-highlight-js-method">data</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content">synlighter</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;w&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;window.<span class="synlighter-highlight-js-method">open</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-doublequote">&quot;</span><span class="synlighter-highlight-js-doublequote-content">Synlighter&nbsp;Syntax</span><span class="synlighter-highlight-js-doublequote">&quot;</span><span class="synlighter-highlight-js-comma">&#44;</span><span class="synlighter-highlight-js-doublequote">&quot;</span><span class="synlighter-highlight-js-doublequote-content">_blank</span><span class="synlighter-highlight-js-doublequote">&quot;</span><span class="synlighter-highlight-js-comma">&#44;</span><span class="synlighter-highlight-js-doublequote">&quot;</span><span class="synlighter-highlight-js-doublequote-content">width<span class="synlighter-highlight-js-operator">&#61;</span><span class="synlighter-highlight-js-number">750</span><span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;height<span class="synlighter-highlight-js-operator">&#61;</span><span class="synlighter-highlight-js-number">400</span><span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;location<span class="synlighter-highlight-js-operator">&#61;</span><span class="synlighter-highlight-js-number">0</span><span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;resizable<span class="synlighter-highlight-js-operator">&#61;</span><span class="synlighter-highlight-js-number">1</span><span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;menubar<span class="synlighter-highlight-js-operator">&#61;</span><span class="synlighter-highlight-js-number">0</span><span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;scrollbars<span class="synlighter-highlight-js-operator">&#61;</span><span class="synlighter-highlight-js-number">0</span></span><span class="synlighter-highlight-js-doublequote">&quot;</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;w.<span class="synlighter-highlight-js-word">document</span>.<span class="synlighter-highlight-js-method">write</span><span class="synlighter-highlight-js-bracket">(</span>&quot;<span class="synlighter-highlight-js-operator">&lt;</span>textarea&nbsp;style<span class="synlighter-highlight-js-operator">&#61;</span>\\&quot;width<span class="synlighter-highlight-js-colon">&#58;</span><span class="synlighter-highlight-js-number">99</span><span class="synlighter-highlight-js-operator">%</span><span class="synlighter-highlight-js-semicolon">&#59;</span>height<span class="synlighter-highlight-js-colon">&#58;</span><span class="synlighter-highlight-js-number">99</span><span class="synlighter-highlight-js-operator">%</span>\\&quot;<span class="synlighter-highlight-js-operator">&gt;</span>&quot;&nbsp;<span class="synlighter-highlight-js-operator">+</span>&nbsp;<span class="synlighter-highlight-js-jqueryobject">$</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-word">document</span><span class="synlighter-highlight-js-bracket">)</span>.<span class="synlighter-highlight-js-method">data</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content">synlighter<span class="synlighter-highlight-js-operator">&#45;</span>syntax<span class="synlighter-highlight-js-operator">&#45;</span></span><span class="synlighter-highlight-js-singlequote">&#39;</span>&nbsp;<span class="synlighter-highlight-js-operator">+</span>&nbsp;id<span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-operator">+</span>&nbsp;<span class="synlighter-highlight-js-doublequote">&quot;</span><span class="synlighter-highlight-js-doublequote-content"><span class="synlighter-highlight-js-operator">&lt;</span><span class="synlighter-highlight-js-operator">&#47;</span>textarea<span class="synlighter-highlight-js-operator">&gt;</span></span><span class="synlighter-highlight-js-doublequote">&quot;</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;w.<span class="synlighter-highlight-js-word">document</span>.<span class="synlighter-highlight-js-method">close</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-figurebracket">}</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-figurebracket">}</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-jqueryobject">$</span>.fn.synlighter&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-method">function</span><span class="synlighter-highlight-js-bracket">(</span>options<span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">return</span>&nbsp;<span class="synlighter-highlight-js-word">this</span>.<span class="synlighter-highlight-js-method">each</span><span class="synlighter-highlight-js-bracket">(</span>function<span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;element&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-jqueryobject">$</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-word">this</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-comment"><span class="synlighter-highlight-js-operator">&#47;</span><span class="synlighter-highlight-js-operator">&#47;</span>&nbsp;Return&nbsp;early&nbsp;if&nbsp;<span class="synlighter-highlight-js-word">this</span>&nbsp;element&nbsp;already&nbsp;has&nbsp;a&nbsp;plugin&nbsp;instance<br></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-method">if</span><span class="synlighter-highlight-js-bracket">(</span>element.<span class="synlighter-highlight-js-method">data</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content">synlighter</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-word">instanceof</span>&nbsp;Synlighter<span class="synlighter-highlight-js-bracket">)</span>&nbsp;<span class="synlighter-highlight-js-figurebracket">{</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">return</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-figurebracket">}</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-comment"><span class="synlighter-highlight-js-operator">&#47;</span><span class="synlighter-highlight-js-operator">&#47;</span>&nbsp;pass&nbsp;options&nbsp;to&nbsp;plugin&nbsp;constructor<br></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-word">var</span>&nbsp;synlighter&nbsp;<span class="synlighter-highlight-js-operator">&#61;</span>&nbsp;<span class="synlighter-highlight-js-word">new</span>&nbsp;<span class="synlighter-highlight-js-method">Synlighter</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-word">this</span><span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;options<span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-comment"><span class="synlighter-highlight-js-operator">&#47;</span><span class="synlighter-highlight-js-operator">&#47;</span>&nbsp;Store&nbsp;plugin&nbsp;object&nbsp;<span class="synlighter-highlight-js-word">in</span>&nbsp;<span class="synlighter-highlight-js-word">this</span>&nbsp;element&#39;s&nbsp;data<br></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;element.<span class="synlighter-highlight-js-method">data</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-singlequote-content">synlighter</span><span class="synlighter-highlight-js-singlequote">&#39;</span><span class="synlighter-highlight-js-comma">&#44;</span>&nbsp;synlighter<span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-figurebracket">}</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="synlighter-highlight-js-figurebracket">}</span><span class="synlighter-highlight-js-semicolon">&#59;</span><br><span class="synlighter-highlight-js-figurebracket">}</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-bracket">(</span><span class="synlighter-highlight-js-jqueryobject">jQuery</span><span class="synlighter-highlight-js-bracket">)</span><span class="synlighter-highlight-js-semicolon">&#59;</span>');
+
+		var allHighlightedSyntax = [];
+
+        $(document).ready(function (e) {
+            console.time('Highlight');
+            $('.synlighter1').synlighter({
+            	callback: function(highlightedSyntax) {
+					allHighlightedSyntax.push(highlightedSyntax);
+				}
+			});
+            console.timeEnd('Highlight');
+			for(var i = 0; i < allHighlightedSyntax.length; i++) {
+				var identical = allHighlightedSyntax[i] == originalResult[i];
+				console.log(identical);
+			}
+		});
+    </script>
+
 </section>
 </body>
 </html>

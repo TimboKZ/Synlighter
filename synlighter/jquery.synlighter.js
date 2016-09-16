@@ -20,7 +20,8 @@
             maxHeight: null,
             counter: null,
             langAttr: 'data-language',
-            suppressWarnings: false
+            suppressWarnings: false,
+            callback: function() {}
         }, options || {});
 
 
@@ -464,6 +465,8 @@
         // Display syntax
         container.append('<div class="synlighter-syntax synlighter-syntax-' + lang + '"><code class="synlighter-syntax-code" style="padding-right:16px;padding-left:' + syntaxPadding + 'px;"><pre class="synlighter-syntax-pre">' + highlightedSyntax + '</pre></code></div>');
 
+        // Development callback
+        settings.callback(highlightedSyntax);
 
         this.getSyntax = function () {
             return originalSyntax;
